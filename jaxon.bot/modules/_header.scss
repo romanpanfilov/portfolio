@@ -1,0 +1,73 @@
+.jx-header{
+	background-color: $White;
+	padding-top: 26px;
+	padding-bottom: 26px;
+&__logo{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-width: 120px;
+	@media (min-width:320px) and (max-width: 516px){
+     
+     	margin: 0 auto;
+     	.img-responsive{
+     		margin: 0 auto;
+     	}
+     
+	}
+}
+
+&__box{
+	padding: 20px 0 20px 30px;
+	
+	border-left: 1px solid rgba(0, 0, 0, .1);
+@media (min-width:320px) and (max-width: 516px){
+     
+     	border-left: none;
+     		
+     	}
+}
+
+&__icon, &__info{
+	display: inline-block;
+	vertical-align: middle;
+}
+&__info{
+	margin-left: 15px;
+
+}
+&__title{
+	font-family: $Roboto;
+	font-size: 15px;
+	font-weight: 600;
+	color: $gray2;
+	letter-spacing: 1px;
+	line-height: 1;
+}
+&__desc{
+	line-height: 1;
+	margin-top: 12px;
+	font-family: $Roboto;
+	font-size: 13px;
+	font-weight: 300;
+	color: $gray2;
+	letter-spacing: 1px;
+
+}
+		
+&--right{
+	@media (max-width: 320px) {
+		float: left;
+
+	}
+	@media (min-width:321px)  {
+		float: right;
+		
+	}
+}
+		
+		
+	
+	
+	
+}
+

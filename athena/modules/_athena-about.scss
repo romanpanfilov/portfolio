@@ -1,0 +1,31 @@
+.at-athena-about{
+	background-color: $white;
+	&__line{
+	position: relative;
+	&:before{
+			position: absolute;
+			content: "";			
+			width: 100%;
+			max-width: 100px;
+			height: 1px;
+			background-color: $l-gray5;
+			top: 0;
+			left: 0;
+		}
+	}
+	&__subtitle{
+		line-height: 1;
+		color: $l-blue2;
+    	@include font($os, 1.4rem, 700);
+    	letter-spacing: 2px;
+	}
+	&__title{
+		color: $d-blue;
+    	margin-bottom: 17px;
+	}
+	&__text{
+		color: $m-gray;
+    	@include font($os, 1.8rem, 400);
+    	
+	}
+}

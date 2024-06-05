@@ -1,0 +1,103 @@
+.e-blog{
+	padding-top: 50px;
+	padding-bottom: 135px;
+	&__subtitle{
+		@include font($p, 0.8rem, 400, 1);
+		color: $black;
+		margin-bottom: 6px;
+	}
+	&__title{
+		@include font($p, 1.5rem, 800, 1);
+		color: $black;
+		margin-bottom: 52px;
+	}
+	&__date{
+		@include font($p, 0.8rem, 400, 1);
+		color: $l-gray2;
+	}
+	&__name{
+		@include font($p, 1.4rem, 800, 1);
+		color: $black;
+		margin-top: 16px;
+		margin-bottom: 10px;
+	}
+	&__web{
+		@include font($p, 0.7rem, 600, 1);
+		color: $l-gray2;
+		margin-bottom: 17px;
+		&-link{
+			@include font($p, 0.7rem, 600, 1);
+			color: $l-gray2;
+			transition: 0.3s;
+			position: relative;
+			&:before{
+					content: "";
+					display: block;
+					height: 1px;
+					width: 76px;
+					background-color: $tr;
+					position: absolute;
+					bottom: 0;
+				    right: 0;
+				    transition: 0.3s;
+				}
+			&:hover{
+				color: $e-violet;
+				// text-decoration: underline $im;
+				&:before{
+					background-color: $e-violet;
+				}
+			}
+		}
+	}
+	&__button{
+		flex: 0 0 37px;
+		max-width: 37px;
+		height: 37px;
+		background-color: $l-gray1;
+		display: block;
+		border-radius: 50%;
+		text-align: center;
+		transition: 0.3s;
+		&:hover{
+			background-color: $l-gray6;
+			.fas{
+				color: $white;
+			}
+		}
+		.fas{
+			font-size: 14px;
+			line-height: 37px;
+			color: $d-gray3;
+			transition: 0.3s;
+		}
+		&-box{
+			width: 100%;
+		}
+	}
+	&__img{
+		&-box{
+			max-width: 100%;
+			height: 233px;
+			background-color: $l-gray2;
+		}
+	}
+	&__line{
+		width: 100%;
+		height: 1px;
+		background-color: $l-gray5;
+		margin-top: 38px;
+		margin-bottom: 38px;
+		position: relative;
+		&:before{
+			content: "";
+			display: block;
+			position: absolute;
+			width: 1px;
+			height: 38px;
+			background-color: $l-gray5;
+		    left: calc(50% - 1px);
+		    top: -19px;
+		}
+	}
+}

@@ -1,0 +1,148 @@
+.at-resume{	
+	border-top: 1px solid $l-gray1;
+	&__wrap{
+			position: relative;
+			padding-top: 33px;
+			padding-bottom: 30px;
+			&:before{
+				content: "";
+				top: 0;
+				left: 0;
+				position: absolute;
+				height: 1px;
+				background-color: $l-gray1;
+			}
+			}
+	&__title{
+		color: $l-blue2;
+	    @include font($os, 1.4rem, 700);
+	    letter-spacing: 2px;
+	    text-transform: uppercase;
+	    margin-bottom: 35px;
+	}
+	&__subtitle{
+			line-height: 1;
+			color: $black;
+		    @include font($os, 1.8rem, 600);
+		    margin-bottom: 15px;
+			}
+	&__text{
+		line-height: 25px;
+		color: $m-gray;
+	    @include font($os, 1.4rem, 400);
+	    margin-bottom: 55px;
+	}
+	&__skill{
+		border-radius: 35px;
+		background-color: $l-gray4;
+		padding: 8px 25px;
+		line-height: 1;
+		color: $black;
+	    @include font($os, 1.3rem, 600);			
+		}
+		&__experience{
+			&-point{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			&-box{
+				padding-left: 30px;
+				position: relative;
+				& + .at-resume__experience-box{
+					margin-top: 32px;
+				}
+			}
+			
+			&-date{
+				color: $m-gray;
+			    @include font($os, 1.4rem, 600);
+			    margin-bottom: 20px;
+			    &--black{
+			    	color: $black;
+			    }
+			}
+			&-text{
+				line-height: 30px;
+				color: $m-gray;
+			    @include font($os, 1.5rem, 400);
+			}
+		}
+		&__education{
+			&-box{
+				padding-left: 50px;
+				position: relative;
+			}
+			&-text{
+				line-height: 30px;
+				color: $m-gray;
+			    @include font($os, 1.4rem, 400);
+			}
+			&-icon{
+				position: absolute;
+				top: 0;
+				left: 0;
+				.fas{
+					font-size: 24px;
+					color: $l-gray2;
+				}
+			}
+		}
+		&__award{
+			&-box{
+				padding-left: 50px;
+				position: relative;
+			}
+			&-icon{
+				position: absolute;
+				top: 0;
+				left: 0;
+				.fab{
+					font-size: 24px;
+					color: $l-gray2;
+				}
+			}
+		}
+		&__introduction{
+			&-box{
+				margin-bottom: 32px;
+			}
+			&-subtitle{
+				line-height: 1;
+				color: $black;
+			    @include font($os, 1.8rem, 600);
+			    margin-bottom: 15px;
+			}
+			&-text{
+				line-height: 25px;
+				color: $m-gray;
+			    @include font($os, 1.4rem, 400);
+			}
+			&-desc{
+				color: $l-gray2;
+			    text-transform: uppercase;
+			}
+			&-info{
+				line-height: 40px;
+				color: $l-blue2;
+			    @include font($os, 1.4rem, 400);
+			}
+			&-skill{
+				border-radius: 35px;
+				background-color: $l-gray4;
+				padding: 8px 25px;
+				line-height: 1;
+				color: $black;
+			    @include font($os, 0.9rem, 600);
+			    
+			}
+			&-link{			
+				line-height: 40px;
+				color: $l-blue2;
+			    @include font($os, 1.4rem, 400);
+			    &:hover{
+			    	color: $l-blue4;
+			    }
+			}
+		}
+}

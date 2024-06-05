@@ -1,0 +1,867 @@
+.at-header-dashboard{
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: $white;
+	&__desc{
+		&-line{
+			margin-top: 12px;
+			margin-bottom: 12px;
+			border-bottom: 1px dashed $l-gray1;
+		}
+	}
+	&__form{
+		padding: 5px 40px 5px 20px;
+	    border: 0;
+	    color: #fff;
+	    background-color: #000;
+	    max-width: 300px;
+	    width: 100%;
+	    border-radius: 12px;
+	}
+	&__slogan{
+		color: $black;
+        @include font($mt, 1.3rem, 600);
+        text-transform: uppercase;
+	}
+	
+	&__logo-box{
+		margin-left: 19px;
+	}
+	&__logo-title{
+		color: $black;
+        @include font($mt, 1.8rem, 600);
+        display: block;
+        line-height: 1;
+        letter-spacing: 3px;
+	}
+	&__logo-subtitle{
+		color: $l-blue1;
+        @include font($os, 1.2rem, 700);
+        letter-spacing: 5.5px;
+	}	
+	&__archive{
+		border-right: 1px solid $l-gray8;
+		display: block;
+	    text-transform: uppercase;
+	    text-decoration: none;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    margin-right: 10px;
+	    color: $l-black;
+	    line-height: 70px;
+	    position: relative;
+	    transition: 0.5s;
+	    &:before{
+	    	content: "";
+	    	transition: 0.5s;
+	    }
+	    &--active, &:hover{
+        	.at-header-dashboard__archive-text{
+	        	transition: 0.5s;
+				color: $l-blue1 $im;
+        	}
+	        &:before{
+	    		content: "";
+	    		position: absolute;
+	    		width: 100%;
+	    		height: 3px;
+	    		background-color: $l-blue1;
+	    		top: 0;
+	    		left: 0;
+	    	}
+	    	.at-header-dashboard__archive-img{
+	    		transition: 0.5s;
+	    		fill: $l-blue1;
+	    	}
+	    }
+	    	.at-header-dashboard__archive-img{
+	    		fill: $l-gray5;
+	    	}
+		&-img-box{
+			margin-right: 16px;
+		}
+		&-text{
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $l-black;
+	        @include font($os, 1.3rem, 600);
+	        text-transform: uppercase;
+		    display: inline-block;
+		    border-top: 2px solid transparent;
+		}
+	}
+	&__link{
+		position: relative;
+		display: block;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding-left: 15px;
+		padding-right: 15px;
+		color: $l-black;
+		line-height: 73px;
+		transition: 0.5s;
+			
+			&:before{
+				box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.18); 
+				z-index: -1;
+				bottom: -10px;
+				left: 50%;
+				content: "";
+				position: absolute;
+				display: none;
+				width: 18px;
+				height: 20px;
+				background-color: $white;
+				transform: rotate(45deg);
+				margin-left: -9px;
+			}
+			&:after{
+				cursor: default;
+				z-index: 11;
+				bottom: -10px;
+				left: 50%;
+				content: "";
+				position: absolute;
+				display: none;
+				width: 18px;
+				height: 20px;
+				background-color: $white;
+				transform: rotate(45deg);
+				margin-left: -9px;
+			}
+		
+	}
+	
+		&__menu{
+			padding: 15px 30px 40px 30px;
+			&-box{
+				display: none;
+				box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.18); 
+				left: 0;
+				width: 300px;
+				background-color: $white;
+			}
+			&-slogan{
+				color: $black;
+		        @include font($mt, 1.3rem, 600);
+		        text-transform: uppercase;
+	        &-box{
+				padding: 40px 30px 0 30px;
+				}
+			}
+			&-list{
+				transition: 0.3s;
+				&-box{
+					padding: 0;
+	    			list-style-type: none;
+				}
+		    	&--active a, &:hover .at-header-dashboard__menu-link{
+		    		color: $l-blue2;
+		    		}
+		    	}		
+			&-link{
+				display: block;
+				line-height: 35px;
+				color: $m-gray;
+		    	@include font($os, 1.5rem, 400);
+		    	transition: 0.3s;
+			}
+		}
+
+	&__list{
+		position: relative;		
+		color: $black;
+	    @include font($os, 1.3rem, 600);
+	    &-box{
+	    	padding: 0;
+	    	list-style-type: none;
+	    }
+	    transition: 0.5s;
+	    &:before{
+	    	content: "";
+	    	transition: 0.5s;
+	    }
+	    &--active, &:hover{
+	    	&:before{
+	    		content: "";
+	    		position: absolute;
+	    		width: 100%;
+	    		height: 3px;
+	    		background-color: $l-blue1;
+	    		top: 0;
+	    		left: 0;
+	    	}
+        a.at-header-dashboard__link{
+			color: $l-blue1 $im;
+			transition: 0.5s;
+       	 }
+    	
+    	}
+	    &.show{ 
+	    	a.at-header-dashboard__link{
+				color: $l-blue1 $im;
+	        }
+	    	&:before{
+	    		content: "";
+	    		position: absolute;
+	    		width: 100%;
+	    		height: 3px;
+	    		background-color: $l-blue1;
+	    		top: 0;
+	    		left: 0;
+	    	}
+			.at-header-dashboard__menu-box{
+				display: block;
+			}
+			.at-header-dashboard__link:before, .at-header-dashboard__link:after{
+				display: block;
+			}
+		}
+	}
+	&__services-search{
+		padding: 15px 0px 15px 50px;
+		max-width: 460px;
+		width: 100%;
+		background-color: $m-white2;
+		border: 0px solid $black;
+		border-radius: 30px;
+	}
+	&__services-search-box{
+		max-width: 460px;
+	    width: 100%;
+	    margin-left: 30px;
+	    position: relative;
+	}
+	&__services-icon{
+		.fas {
+			position: absolute;
+			top: 15px;
+			left: 25px;
+			font-size: 16px;
+			color: $l-blue1;
+		}
+	}
+	&__button{
+		&:focus{
+		outline: 0;
+	}	
+	}
+	&__qty-img{
+		position: absolute;
+	    display: block;
+	    height: 12px;
+	    background-color: $l-blue1;
+	    top: 1px;
+	    left: 31px;
+	    border-radius: 10px;
+	   	width: 12px;
+	    
+	}
+	&__qty{
+		position: absolute;
+	    display: block;
+	    height: 15px;
+	    background-color: $l-blue1;
+	    top: 3px;
+	    left: 24px;
+	    border-radius: 10px;
+	    color: #fff;
+	    text-align: center;
+	    font-size: 1.2rem;
+	    line-height: 1.3;
+	    max-width: 29px;
+	    padding: 0 5px;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	    overflow: hidden;
+	}
+	&__icon{
+		position: relative;
+		padding: 10px 10px 20px 10px;
+		display: block;
+		cursor: pointer;
+			&-mobile{
+				position: relative;
+			&.show{ 
+			.at-header-dashboard__popup-box, .at-header-dashboard__messages-box, .at-header-dashboard__manage-box{
+				display: block;
+			}
+			&:before, &:after{
+				display: block;
+			}
+			}
+				&:before{
+				box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.18); 
+				z-index: -1;
+				bottom: -23px;
+				left: 50%;
+				content: "";
+				position: absolute;
+				display: none;
+				width: 18px;
+				height: 20px;
+				background-color: $white;
+				transform: rotate(45deg);
+				margin-left: -9px;
+			}
+			&:after{
+				cursor: default;
+				z-index: 2;
+				bottom: -23px;
+				left: 50%;
+				content: "";
+				position: absolute;
+				display: none;
+				width: 18px;
+				height: 20px;
+				background-color: $white;
+				transform: rotate(45deg);
+				margin-left: -9px;
+			}
+			}
+		.fas{
+			text-align: center;
+    		width: 25px;
+			font-size: 22px;
+			color: $l-gray5;
+		}
+		&:before{
+			box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.18); 
+			z-index: -1;
+			bottom: -10px;
+			left: 13px;
+			content: "";
+			position: absolute;
+			display: none;
+			width: 18px;
+			height: 20px;
+			background-color: $white;
+			transform: rotate(45deg);
+		}
+		&:after{
+			cursor: default;
+			z-index: 2;
+			bottom: -10px;
+			left: 13px;
+			content: "";
+			position: absolute;
+			display: none;
+			width: 18px;
+			height: 20px;
+			background-color: $white;
+			transform: rotate(45deg);
+		}			
+		&.show{ 
+			.at-header-dashboard__popup-box, .at-header-dashboard__messages-box, .at-header-dashboard__manage-box{
+				display: block;
+			}
+			&:before, &:after{
+				display: block;
+			}
+		}
+
+		&:hover .fas{
+			transition: 0.5s;
+			color: $l-gray11;
+		}	
+	}
+	&__information-box{
+		align-items: center;
+	}
+	&__photo{
+		border-radius: 50%;
+		&-mobile{
+			position: relative;
+			&.show{ 
+					.at-header-dashboard__content-box{
+						display: block;
+					}
+					&:before, &:after{
+						display: block;
+					}
+				}
+			&:before{
+				box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.18); 
+				z-index: -1;
+				bottom: -23px;
+				left: 50%;
+				content: "";
+				position: absolute;
+				display: none;
+				width: 18px;
+				height: 20px;
+				background-color: $white;
+				transform: rotate(45deg);
+				margin-left: -9px;
+			}
+			&:after{
+				cursor: default;
+				z-index: 1;
+				bottom: -23px;
+				left: 50%;
+				content: "";
+				position: absolute;
+				display: none;
+				width: 18px;
+				height: 20px;
+				background-color: $white;
+				transform: rotate(45deg);
+				margin-left: -9px;
+			}
+		}
+		&-box{
+			cursor: pointer;
+			position: relative;
+			display: block;
+			margin-left: 10px;
+			width: 40px;
+			&.show{ 
+					.at-header-dashboard__content-box{
+						display: block;
+					}
+					&:before, &:after{
+						display: block;
+					}
+				}
+			&:before{
+				box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.18); 
+				z-index: -1;
+				bottom: -11px;
+				left: 50%;
+				content: "";
+				position: absolute;
+				display: none;
+				width: 18px;
+				height: 20px;
+				background-color: $white;
+				transform: rotate(45deg);
+				margin-left: -9px;
+			}
+			&:after{
+				cursor: default;
+				z-index: 1;
+				bottom: -11px;
+				left: 50%;
+				content: "";
+				position: absolute;
+				display: none;
+				width: 18px;
+				height: 20px;
+				background-color: $white;
+				transform: rotate(45deg);
+				margin-left: -9px;
+			}
+		}
+	}
+	&__popup{
+		height: 370px;
+		&-box{
+			cursor: default;
+			display: none;
+		    transform: translate(-50%, 0);
+			position: absolute;
+			background-color: $white;
+		}
+	}
+	&__title{
+		color: $black;
+		@include font($os, 1.2rem, 600);
+		&-box{
+			padding: 20px 30px;
+			border-bottom: 1px solid $l-gray1;
+	}
+	}
+	&__author{
+		margin-right: 20px;
+		overflow: hidden;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		flex: 0 0 45px;
+		&-box{	
+			height: 100%;	
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+	}
+	&__desc{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	&__subtitle{
+		color: $l-blue2;
+		@include font($os, 1.4rem, 400);
+		line-height: 1;
+		margin-bottom: 7px;
+	}
+	&__name{
+		color: $m-gray;
+		@include font($os, 1.3rem, 600);
+		line-height: 1;
+		margin-bottom: 17px;
+	}
+	&__position{
+		line-height: 1;
+		color: $black;
+		@include font($os, 1.3rem, 600);
+		margin-bottom: 5px;
+	}
+	&__cost{
+		line-height: 1;
+		color: $l-gray7;
+		@include font($os, 1.3rem, 400);
+		margin-right: 25px;
+	}
+	&__number{
+		line-height: 1;
+		color: $l-gray6;
+		@include font($os, 1.3rem, 400);
+		font-style: italic;
+	}
+	&__item{
+		&-box{
+			// list-style-type: none;
+			margin-bottom: 25px;
+		}
+		&:hover .at-header-dashboard__subtitle{
+			text-decoration: underline;
+		}
+	}
+	&__more{
+		margin-top: 10px;
+		padding-bottom: 10px;
+	&-box{
+		display: block;
+		padding-top: 5px;
+		padding-bottom: 30px;
+		}
+	}
+	&__btn{
+		text-align: center;
+		display: inline-block;
+		border-radius: 35px;
+		background-color: $l-black;
+		color: $white;
+		@include font($os, 1.4rem, 400);			
+		line-height: 1;
+		transition: 0.5s;
+		&-box{
+			transition: 0.5s;
+		}
+		&:hover{
+			transition: 0.5s;
+			background-color: $l-gray2;
+			color: $l-gray8;
+			}
+	}
+	&__content{
+		&-box{
+			cursor: default;
+			display: none;
+			position: absolute; 
+			background-color: $white;
+		}
+		&-bg{
+			position: relative;
+			z-index: 2;
+			height: 140px;
+			overflow: hidden;
+			background-size: cover;
+		}
+		&-name{
+			margin-top: 12px;
+			line-height: 1;
+			display: block;
+			@include font($os, 1.6rem, 600);
+			color: $l-blue2;
+			margin-bottom: 8px;
+			transition: 0.3s;
+		}
+		&-position{
+			line-height: 1;
+			@include font($os, 1.4rem, 400);
+			color: $l-gray2;
+		}
+		&-profile{
+			padding-bottom: 30px;
+			text-align: center;
+			margin-top: -45px;
+		}
+		&-photo{
+			border: 3px solid $white;
+			border-radius: 50%;
+			width: 90px;
+			height: 90px;
+			overflow: hidden;
+			&-box{
+				width: 90px;
+    			height: 90px;
+				z-index: 3;
+				position: relative;
+				display: block;
+				margin: 0 auto;
+			}			
+		}
+		&-link{
+			transition: 0.8s;
+			display: block;
+			@include font($os, 1.5rem, 400);
+			color: $m-gray;
+			.fas{
+				width: 25px;
+				margin-right: 5px;
+				font-size: 1.8rem;
+			}
+			.far{
+				width: 25px $im;
+				margin-right: 5px $im;
+				font-size: 1.8rem $im;
+			}
+		}
+		&-list{
+			transition: 0.3s;
+			border-left: 4px solid transparent;
+			&--active, &:hover{
+				background-color: $l-blue6;
+				border-left: 4px solid $l-blue2;
+			}
+			&--mobile{
+				background-color: $l-blue6;
+			}
+			&:hover .at-header-dashboard__content-link{
+				padding-left: 46px;
+				color: $l-blue2;
+				.fas, 
+				.far{
+					color: $m-gray;
+				}
+			}
+			&-box{
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+	&__search{
+	      outline: none;
+		  padding: 15px 0px 15px 50px;
+		  width: 100%;
+		  border: 0px solid $black;
+		  background-color: $tr;
+		  border-radius: 30px;
+	      transition: ease-in-out .5s;
+		&-box{
+			max-width: 50px;
+		    width: 100%;
+		    position: relative;
+		    transition: ease-in-out .5s;
+		    &.active{
+				max-width: 460px;
+		    	.at-header-dashboard__search{
+		    		background-color: $m-white2;
+		    	}
+		    }
+		}
+		&-icon{
+			position: absolute;
+		    top: 10px;
+		    right: 25px;
+		    font-size: 16px;
+		    color: $l-blue1;
+		}
+	}
+	&__manage{
+		height: 444px;
+		&-box{
+			display: none;			
+		    transform: translate(-50%, 0);
+			position: absolute;
+			background-color: $white;
+		}
+		&-title{
+			color: $black;
+			@include font($os, 1.2rem, 600);
+			line-height: 1.7;
+			&-box{
+				padding: 19px 27px 15px 30px;
+				border-bottom: 1px solid $l-gray1;
+				cursor: default;
+				}
+			&-icon{
+				display: block;
+			.fas{
+				line-height: 1;
+				font-size: 1.8rem;
+				color: $l-gray2;
+				}
+				}
+			}
+			&-author{
+				transition: 0.3s;
+				margin-right: 15px;
+				overflow: hidden;
+				width: 45px;
+				height: 45px;
+				border-radius: 50%;
+				flex: 0 0 45px;
+				&-box{
+					height: 100%;
+					overflow-y: scroll;
+					overflow-x: hidden;
+				}
+			}
+			&-name{
+				color: $l-blue2;
+				@include font($os, 1.4rem, 600);
+				line-height: 1;
+				margin-bottom: 9px;
+				position: relative;	
+				transition: 0.3s;			
+			}
+			&-position{
+				color: $m-gray;
+				@include font($os, 1.3rem, 600);
+				margin-bottom: 7px;
+				position: relative;
+			}
+			&-date{
+				line-height: 1;
+				color: $l-gray9;
+				@include font($os, 1.3rem, 400);
+				font-style: italic;
+			}
+			&-item{
+				padding-top: 10px;
+				&-box{
+					margin-bottom: 17px;
+					&:hover .at-header-dashboard__manage-name{
+						color: $d-blue;
+					}
+					&:last-child{
+						margin: 0;
+					}
+				}
+			}
+		&-close{
+			&-box{
+				 width: 30px;
+			    height: 19px;
+				-webkit-appearance: none;
+			    border: 0;
+			    background-color: transparent;
+			    &:focus{
+			    	outline: none;
+			    }
+			    &:hover .at-header-dashboard__manage-close{
+				fill: $l-blue1;
+				&-stroke{
+					stroke: $l-blue1;
+				}
+			}
+			}
+		}
+	}
+	&__messages{
+		height: 374px;
+		&-box{
+			display: none;			
+		    transform: translate(-50%, 0);
+			position: absolute;
+			background-color: $white;
+		}
+		&-title{
+			color: $black;
+			@include font($os, 1.2rem, 600);
+			line-height: 1.7;
+			&-box{
+				padding: 19px 27px 15px 30px;
+				border-bottom: 1px solid $l-gray1;
+				cursor: default;
+				}
+			&-icon{
+				display: block;
+			.fas{
+				line-height: 1;
+				font-size: 1.8rem;
+				color: $l-gray2;
+				}
+				}
+			}
+			&-author{
+				transition: 0.3s;
+				margin-right: 20px;
+				overflow: hidden;
+				width: 45px;
+				height: 45px;
+				border-radius: 50%;
+				flex: 0 0 45px;
+				&-box{
+					height: 100%;
+					overflow-y: scroll;
+					overflow-x: hidden;
+				}
+			}
+			&-name{
+				color: $l-blue2;
+				@include font($os, 1.4rem, 600);
+				line-height: 1;
+				margin-bottom: 9px;
+				position: relative;	
+				transition: 0.3s;			
+				&-notification{
+					position: absolute;
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					left: -25px;
+					top: 3px;
+					background-color: $l-blue7;
+				}
+			}
+			&-position{
+				color: $m-gray;
+				@include font($os, 1.3rem, 600);
+				margin-bottom: 7px;
+				position: relative;
+				&-comment{
+					position: absolute;
+					left: -25px;
+					top: 1px;
+					.far{
+						font-size: 1.3rem;
+						color: $m-gray;
+					}
+				}
+			}
+			&-date{
+				line-height: 1;
+				color: $l-gray9;
+				@include font($os, 1.3rem, 400);
+				font-style: italic;
+			}
+			&-text-box{
+				padding-left: 25px;
+			}
+			&-item{
+				padding-top: 10px;
+				&-box{
+					margin-bottom: 30px;
+					&:hover .at-header-dashboard__messages-name{
+						color: $d-blue;
+					}
+					&:last-child{
+						margin: 0;
+					}
+				}
+			}
+		}
+
+
+	&-settings{
+		position: relative;
+		border-bottom: 1px solid $l-gray8;
+	}
+}

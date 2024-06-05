@@ -1,0 +1,27 @@
+@media (min-width: 992px) and (max-width: 1179px) {
+	.bz-hidden-lg{
+		display: none;
+	}
+}
+@media (min-width: 992px) {
+	.bz-topnav__toggler{
+		display: none;
+	}
+	.bz-topnav__social-link{
+		padding-right: 40px;
+	}
+	.bz-topnav__logo{
+		padding-top: 7px;
+		@include font($font__main, 3.8, 800, $color__link);
+		&-ic{
+			@include font($font__main, 4.6, 800, $color__link);
+		}
+	}
+	.bz-topnav__search-link{
+		padding: 24px 0;
+	}
+	.bz-nav__link{
+		padding-top: 21px;
+		padding-bottom: 26px;
+	}
+}

@@ -1,0 +1,40 @@
+.jx-topbar{
+	background-color: $dark-blue;
+	
+	&-slogan{
+
+		color: $White;
+		font-family: $Roboto;
+		font-size: 14px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		line-height: 18px;
+	}
+	&-social{
+		list-style-type: none;
+	    padding: 0;
+	    margin: 0;
+	    overflow: hidden;
+	    border-right: 1px solid rgba(255, 255, 255, .2);
+
+	    li{
+	    	display: inline-block;
+	    	float: right;
+	    	border-left: 1px solid rgba(255, 255, 255, .2);
+	    	a{
+	    		display: block;
+	    		width: 49px;
+	    		text-align: center;
+	    		line-height: 47px;
+	    		color: $White;
+	    		font-size: 16px;
+
+	    		&:hover{
+	    			background-color: rgba(255, 255, 255, .2);
+	    			color: $copper;
+	    			transition: .6s;
+	    		}
+	    	}
+	    }
+	}
+}

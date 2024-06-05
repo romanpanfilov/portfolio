@@ -1,0 +1,99 @@
+.at-resume-profile{
+	&__box{
+		padding-top: 77px;
+	}
+	&__title{
+		line-height: 1;
+		color: $black;
+    	@include font($os, 1.6rem, 600);
+	}
+	&__link{
+		line-height: 1;
+		color: $l-gray2;
+    	@include font($os, 1.4rem, 600);
+    	transition: 0.5s;
+    	&-box{
+    		transition: 0.5s;
+    		&:hover{
+    		color: $d-blue;
+    	}
+    	.fas{
+			font-size: 15px;
+    		color: $l-gray6;
+    		margin-left: 15px;
+    	}
+    	}
+	}
+	&__bar{
+		background-color: $l-blue1;
+		border-radius: 25px;
+		position: relative;
+		&-box{
+			border-radius: 25px;
+			border: 1px solid $l-blue1;
+			background-color: $white;
+		}
+		&-value{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 10px;
+			display: block;
+			line-height: 13px;
+			color: $white;
+    		@include font($os, 1.2rem, 600);
+		}
+	}
+	&__subtitle{
+		color: $black;
+    	@include font($os, 1.4rem, 600);
+    	margin-bottom: 16px;
+    	line-height: 1;
+	}
+	&__skill-box{
+		margin-top: 46px;
+	}
+	&__add-link{
+		color: $m-gray;
+    	@include font($os, 1.4rem, 600);
+    	margin-top: 30px;
+    	display: block;
+    	line-height: 1;
+    	transition: 0.5s;
+    	&:hover{
+    		transition: 0.5s;
+    		color: $d-blue;
+    	}
+	}
+	&__activity{
+		&-wrap{
+			margin-top: 65px;
+		}
+		&-box{
+			& + .at-resume-profile__activity-box{
+				margin-top: 15px;
+			}
+		}
+		&-subtitle{
+			color: $black;
+	    	@include font($os, 1.4rem, 600);
+	    	margin-bottom: 25px;
+	    	line-height: 1;
+		}
+		&-desc{
+			line-height: 1;
+			color: $m-gray;
+    		@include font($os, 1.4rem, 600);
+		}
+	&-icon{
+		background-color: $l-blue1;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		line-height: 2.1;
+		border-radius: 5px;
+		color: $white;
+		@include font($os, 1.4rem, 400);
+	}
+	}
+}

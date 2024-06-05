@@ -1,0 +1,140 @@
+.e-services{
+	padding-top: 173px;
+	padding-bottom: 60px;
+	&__wrap{
+		position: relative;
+	    min-height: 75vh;
+	}
+ 	&__img-left{
+ 		position: absolute;
+ 		z-index: 5;
+ 		left: 0;
+ 	}
+ 	&__img-right{
+ 		left: 165px;
+ 		position: absolute;
+ 	}
+ 	&__serv{
+ 		&-box{
+	 		position: absolute;
+		    z-index: 10;
+		    left: 91px;
+		    top: 112px;
+		}
+		&-title{
+			@include font($p, 2rem, 600, 1);
+			color: $white;
+		}
+
+ 	}
+ 	&__list-box{
+			text-decoration: none;
+			padding: 0;
+			margin: 0;
+		}
+		&__link{
+			@include font($p, 1rem, 400, 33px);
+			color: $white;
+			transition: 0.3s;
+			&:hover{
+				color: $l-violet;
+			}
+		}
+	&__subtitle{
+		@include font($p, 1rem, 600, 1);
+		color: $e-violet;
+		text-transform: uppercase;
+	}
+	&__title{
+		@include font($p, 2.6rem, 700, 1.1);
+		color: $black;
+		margin-bottom: 25px;
+	}
+	&__text{
+		@include font($p, 1rem, 400, 32px);
+		color: $l-gray4;
+		margin-bottom: 65px;
+	}
+	&__button{
+		display: inline-block;
+		text-transform: uppercase;
+		@include font($p, 0.80rem, 600, 1);
+		color: $white;
+		padding: 17px 53px;
+		background-color: $e-violet;
+		border-radius: 40px;
+		transition: 0.3s;
+		&:hover{
+			color: $white;
+			background-color: $d-violet;
+			box-shadow: 0px 2px 27px 10px rgba(196,183,210,0.50);
+		}
+	}
+	&__box{
+		margin-top: 40px;
+	}
+	.bx-wrapper{
+		box-shadow: 0 0 0px #ccc $im;
+ 		border: 0px solid #fff $im;
+	    background: #fff;
+	    margin-bottom: 0px;
+	}
+	.bx-viewport{
+		    height: 80vh $im;
+	}
+	.bx-wrapper .bx-prev, .bx-next{
+		display: none $im;
+	}
+
+	.bx-wrapper .bx-pager.bx-default-pager a{
+		margin: 14px 0px;
+		background-color: $black $im;
+		transition: 0.3s;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			display: block;
+			top: -10px;
+		    left: -10px;
+		    transform: scale(0);
+			width: 30px;
+		    height: 30px;
+		    transition: 0.3s;
+			border-radius: 50%;
+			background-color: $tr;
+			border: 2px solid $e-violet;
+		}
+		&:focus{
+			&:before{
+				transform: scale(1);
+			}
+		}
+		&:hover{
+			
+			background-color: $e-violet $im;
+		}
+		// &:visited{
+		// 	background-color: $e-violet $im;
+		// }
+	}
+	.bx-pager.bx-default-pager a.active{
+		background-color: $e-violet $im;
+		&:before{
+				transform: scale(1);
+			}
+	}
+	.bx-pager-link{
+		background-color: $e-violet $im;
+	}
+	.bx-wrapper .bx-pager{
+		position: absolute;
+		top: 173px;
+    	left: -20px;
+		padding-top: 0;
+		width: 38px;
+	}
+	.bx-wrapper .bx-pager-item{
+		display: flex;
+	}
+}

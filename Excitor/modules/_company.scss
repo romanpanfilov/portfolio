@@ -1,0 +1,58 @@
+.e-company{
+	background-color: $bg;
+	min-height: 100vh;
+	&__play{
+		position: absolute;
+	    left: calc(50% - 26px);
+	    top: calc(50% - 24px);
+	    &-wrap{
+	    	width: 130px;
+	    }
+		&-box{
+			display: block;
+			position: relative;
+			flex: 0 0 101px;
+			width: 101px;
+			height: 101px;
+			border-radius: 50%;
+			background-color: $white;
+			&:active{
+			    transform: scale(1.1);
+			}
+
+		}
+	}
+	&__wrap{
+		min-height: 100vh;
+	    align-items: center;
+	}
+	&__subtitle{
+		@include font($p, .8rem, 600, 1);
+		color: $white;
+		margin-top: 25px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+	&__title{
+		@include font($p, 2.3rem, 600, 1);
+		color: $white;
+		margin-top: 10px;
+		margin-bottom: 41px;
+	}
+	&__button{
+		display: inline-block;
+		text-transform: uppercase;
+		@include font($p, 0.80rem, 400, 1);
+		color: $white;
+		letter-spacing: 1px;
+		padding: 17px 53px;
+		background-color: $e-violet;
+		border-radius: 40px;
+		transition: 0.3s;
+		&:hover{
+			color: $white;
+			background-color: $d-violet;
+			box-shadow: 0px 2px 27px 2px rgba(196,183,210,0.1);
+		}
+	}
+}

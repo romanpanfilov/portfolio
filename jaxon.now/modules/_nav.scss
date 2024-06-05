@@ -1,0 +1,25 @@
+.navbar{
+   background-color: #3564ac;
+   border-radius: 0;
+   margin-bottom: 0;
+    
+    border: 0px solid transparent;
+
+    ul.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 14px 12px;
+
+
+}
+.navbar-nav>li>a {
+    text-shadow: none;
+}
+a{
+	color: $White;
+	font-family: $Roboto;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+}

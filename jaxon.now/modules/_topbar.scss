@@ -1,0 +1,37 @@
+
+	
+	.jx-topbar{
+	
+	
+	margin: 0;text-align: center;
+
+&__wrap{
+	transition: 0.5s;
+}
+&__wrap{
+	position: relative;
+	width: 170px;
+  height: 100px;
+  line-height: 100px;
+  display: inline-block;
+  margin-top: 200px ;
+  background: rgba(135, 86, 120, .4);
+  left: 150px;
+  
+}
+
+// @keyframes swing{
+// 	 50% {
+    
+//     transform: translateX(-150px);
+//   }
+// }
+
+&__wrap:hover{
+  left: -150px;
+  // animation: swing 0.9s ease;
+  //  animation-iteration-count: 5;
+  
+}
+
+}

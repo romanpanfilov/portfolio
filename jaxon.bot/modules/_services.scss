@@ -1,0 +1,133 @@
+.jx-services{
+background-color: $light-white;
+padding-top: 100px;
+padding-bottom: 100px;
+&__servup{
+	padding-bottom: 56px;
+}
+&__servdown{
+	padding-bottom: 67px;
+}
+
+&__divider{
+	padding-top: 20px;
+	padding-bottom: 27px;
+}
+&__title{
+	padding-bottom: 84px;
+	font: {
+     family: $PT;
+     size: 30px;
+     weight: 400; 
+	}
+	color: $liht-gray2;
+}
+&__title--bold{
+	font: {
+     family: $PT;
+     size: 30px;
+     weight: 700; 
+	}
+	color: $liht-gray2;
+}
+
+&__subtitle{
+	font: {
+     family: $Montserrat;
+     size: 18px;
+     weight: 700; 
+	}
+	text-transform: uppercase;
+	color: $liht-gray2;
+}
+&__item--mobile{
+	@media (min-width:320px) and (max-width: 516px){
+
+	padding-top: 100px;
+}
+}
+
+&__item:hover .jx-services__icon:before{
+	background-color: $copper;
+  
+
+
+
+}
+&__item:hover .jx-services__fa{
+	color: $White;
+}
+&__icon{
+	padding-bottom: 39px;
+	position: relative;
+	&:before{
+		content: "";
+		display: inline-block;
+		height: 80px;
+		width: 80px;
+		border: 1px solid $copper;
+		border-radius:  5px;
+		transform: rotate(45deg);
+	}
+}
+&__name{
+	padding-bottom: 30px;
+	font: {
+     family: $Montserrat;
+     size: 18px;
+     weight: 700; 
+	}
+	color: $liht-gray2;
+}
+&__desc{
+	line-height: 28px;
+	font: {
+     family: $Roboto;
+     size: 16px;
+     weight: 400; 
+	}
+	color: $gray2;
+}
+	&__fa{
+		position: absolute;
+		color: $copper;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		display: inline-block;
+		line-height: 80px;
+		
+	}
+
+    &__f{
+    	font-size: 27px;
+    }
+
+  &__button{
+   background-color: $copper;
+   border: 0px solid #000;
+   font: {
+     family: $Montserrat;
+     size: 13px;
+     weight: 700; 
+	}
+	text-transform: uppercase;
+	color: $White;
+	padding: 20px 35px;
+  }
+
+  &__caret{
+  	margin-left: 20px;
+  }
+
+&__button:hover{
+ color: $dark-gray;
+}
+&__button:focus{
+	box-shadow: none;
+}
+
+
+}

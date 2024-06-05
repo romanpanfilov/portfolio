@@ -1,0 +1,136 @@
+.i-skills{
+	background-color: $bg;
+	overflow: hidden;
+	&__title{
+		width: 100%;
+		color: $l-gray1;
+    	@include font($m, 2rem, 400, 1);
+	}
+	&__wrap{
+		position: relative;
+		min-height: 100vh;
+		// &:before{
+		// 	position: absolute;
+		// 	text-outline: 0;
+		// 	left: calc(50% - 1px);
+		// 	content: "";
+		// 	height: 73%;
+		//     bottom: 0;
+		// 	background-color: $d-gray1;
+		// 	width: 1px;
+		// 	display: block;
+		// }
+	}
+	&__img{
+		position: relative;
+		bottom: -21px;
+		animation: bgSkills 3s infinite;
+		animation-direction: alternate;
+		 &-box{
+		  	position: relative;
+		  }
+		@keyframes bgSkills {
+	  
+	  0%{
+	  	transform: translate(-70px)  scale(0.97);
+	  }
+	  100% {
+	    transform: translate(-60px);
+	  }
+	}
+	}
+	&__skill{
+		display: block;
+		color: $l-gray1;
+		margin: 0 auto;	
+	    padding-top: 9px;
+	    padding-bottom: 7px;
+	    border-radius: 25px;
+	    text-align: center;
+	    background-color: $d-gray1;
+	    border-bottom: 2px solid $i-red2;
+	    box-shadow: 0 10px 31px rgba(255, 255, 255, .03);
+	    & + .i-skills__skill{
+	    	margin-top: 10px;
+	    }
+	   
+	
+	}
+	&__line{
+		&-box{
+			position: absolute;
+			text-outline: 0;
+			left: calc(50% - 1px);
+		    bottom: 0;
+			background-color: $d-gray1;
+			width: 1px;
+		}
+	}
+	    .animated{
+		
+	.i-skills__skill{
+		transition: 1s;
+		transform: translateX(0px);
+	}
+	.i-skills__skill2{
+		transition: 1.2s;
+		transform: translateX(0px);
+	}
+	.i-skills__skill3{
+		transition: 1.4s;
+		transform: translateX(0px);
+	}
+	.i-skills__skill4{
+		transition: 1.6s;
+		transform: translateX(0px);
+	}
+	.i-skills__skill5{
+		transition: 1.8s;
+		transform: translateX(0px);
+	}
+	.i-skills__skill6{
+		transition: 2s;
+		transform: translateX(0px);
+	}
+	.i-skills__skill7{
+		transition: 2.2s;
+		transform: translateX(0px);
+	}
+	.i-skills__skill8{
+		transition: 2.4s;
+		transform: translateX(0px);
+	}
+	}
+	.i-skills__skill{
+		transform: translateX(600px);
+	}
+	.i-skills__skill2{
+		transform: translateX(600px);
+	}
+	.i-skills__skill3{
+
+		transform: translateX(600px);
+	}
+	.i-skills__skill4{
+
+		transform: translateX(600px);
+	}
+	.i-skills__skill5{
+
+		transform: translateX(600px);
+	}
+	.i-skills__skill6{
+
+		transform: translateX(600px);
+	}
+	.i-skills__skill7{
+
+		transform: translateX(600px);
+	}
+	.i-skills__skill8{
+
+		transform: translateX(600px);
+	}
+	
+
+}

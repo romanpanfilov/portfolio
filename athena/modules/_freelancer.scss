@@ -1,0 +1,40 @@
+.at-freelancer{
+	background: transparent url(img/unsplash.jpg) center no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 9;
+	&__title{
+		color: $black;
+	}
+	&__subtitle{
+		@include font($os, 1.6rem, 400);
+		color: $m-gray;
+	}
+	&__row{
+		min-height: 100vh;
+	}
+	&__list{
+		list-style-type: none;
+		padding-left: 25px;
+		&-item{
+			position: relative;
+			@include font($os, 1.4rem, 600);
+			color: $black;
+			line-height: 35px;
+			&:before{
+				content: "";
+				position: absolute;
+				display: block;
+				width: 8px;
+				height: 8px;
+				left: -25px;
+				top: 12px;
+				background-color: $l-blue1;
+				border-radius: 50%;
+			}
+		}
+	}
+	&__btn{
+		padding: 15px 42px;
+	}
+}

@@ -1,0 +1,19 @@
+.e-footer{
+	background-color: $bg;
+	padding-top: 80px;
+	padding-bottom: 58px;
+	&__logo{
+		@include font($mon, 2.5rem, 400, 1);
+		color: $white;
+		display: block;
+		&:hover{
+			color: $white;
+		}
+		&-text{
+			@include font($p, 2.5rem, 600, 1);
+			color: $white;
+			margin-left: -5px;
+		    letter-spacing: -1px;
+		}
+	}
+}

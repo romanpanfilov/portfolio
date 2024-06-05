@@ -1,0 +1,45 @@
+.bz-main-banner{
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(images/dist/header-banner.jpg), #D8D8D8;
+	background-size: cover;
+	background-position: center top;
+	padding: 0 40px;
+	margin-bottom: 38px;
+	&:hover{
+		.bz-main-banner__title{
+			color: $color__background-green $im;
+		}
+	}
+	&-row{
+		min-height: 350px;
+		padding-top: 46px;
+		padding-bottom: 46px;
+	}
+	&__category{
+		@include font($font__main, 1.3, 400, $color__link-d);
+		text-transform: uppercase;
+		margin-bottom: 6px;
+		line-height: 16px;
+		display: block;
+		&:hover, &:focus{
+			color: $color__background-green $im;
+		}
+		&:visited{
+			color: $color__link-d;
+		}
+	}
+	&__title{
+		display: block;
+		@include font($font__secondary, 3.6, 400, $color__link-d);
+		line-height: 43px;
+		margin-bottom: 20px;
+		&:hover, &:focus{
+			color: $color__background-green $im;
+		}
+		&:visited{
+			color: $color__link-d;
+		}
+	}
+	&__text{
+		@include font($font__main, 1.6, 400, $color__text-l);
+	}
+}

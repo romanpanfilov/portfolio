@@ -1,0 +1,97 @@
+body{
+	background-color: #f4f4f4;
+}
+h1{
+	text-align: center;
+}
+.gm-game{
+	&__wrap{
+		position: relative;
+		width: 360px;
+		height: 390px;
+		margin: 50px auto;
+		padding: 0;
+		display: block;
+	}
+	&__row{
+		position: relative;
+		display: block;
+		height: 120px;
+
+	}
+	&__cell{
+		float: left;
+		display: block;
+		background-color: #605c57;
+		width: 120px;
+		height: 100%;
+		border: 5px solid #fff;
+		&:hover{
+			background-color: #bab7b4;
+		}
+	}
+
+	.offset-x:before{
+		position: absolute;
+		content: "x";
+		display: block;
+		font-size: 87px;
+    	margin-top: -17px;
+    	margin-left: 35px;
+		width: 10px;
+		height: 10px;
+		color: #fff;
+	}
+	.offset-o:before{
+		position: absolute;
+		content: "0";
+		display: block;
+		font-size: 87px;
+    	margin-top: -10px;
+    	margin-left: 30px;
+		width: 10px;
+		color: #fff;
+		height: 10px;
+	}
+	// .win0{
+	// 	.offset-x:before{
+	
+	// 	color: red ;
+	// }
+	// 	.offset-o:before{
+	
+	// 	color: red;
+	// }
+	// }
+	// .win1{
+	// 	.offset-x:before{
+	
+	// 	color: red;
+	// }
+	// 	.offset-o:before{
+	
+	// 	color: red;
+	// }
+	// }
+	// .win2{
+	// 	.offset-x:before{
+	
+	// 	color: red;
+	// }
+	// 	.offset-o:before{
+	
+	// 	color: red;
+	// }
+	// }
+	// .win3{
+	// 	.offset-x:before{
+	
+	// 	color: red;
+	// }
+	// 	.offset-o:before{
+	
+	// 	color: red;
+	// }
+	// }
+
+}

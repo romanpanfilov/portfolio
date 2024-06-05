@@ -1,0 +1,105 @@
+.at-inbox{
+	background-color: $white;
+	&__title{
+		color: $black;
+		@include font($os, 2.2rem, 300);
+		margin-right: 13px;
+		&-box{
+			margin-bottom: 35px;
+		}
+	}
+	&__badge{
+		background-color: $l-blue1;
+		color: $white;
+		@include font($os, 1.3rem, 400);
+		line-height: 30px;
+		border-radius: 30px;
+		padding: 0 17px;
+	}
+	&__form{
+		margin-bottom: 40px;
+		position: relative;
+		&-search{
+			border: none;
+		    background-color: transparent;
+		    padding: 0;
+			position: absolute;
+			top: 11px;
+    		right: 21px;
+    		&:focus{
+    			outline: none;
+    		}			
+			.fas{
+				font-size: 1.4rem;
+				color: $l-blue2;
+			}
+			}
+		input.at-inbox__input{
+			@include font($os, 1.3rem, 400);
+			font-style: italic;
+			min-height: 34px;
+			display: block;
+			width: 100%;
+			padding: 0 34px 0 18px;
+			border-radius: 30px;
+    		line-height: 34px;
+    		border: 1px solid $l-gray1;
+    		color: $l-gray2;
+    		&:focus{
+    			box-shadow: 0 0 0 0;
+    		}
+    		&::-webkit-input-placeholder {color:$l-gray2;}
+			&::-moz-placeholder          {color:$l-gray2;}
+			&:-moz-placeholder           {color:$l-gray2;}
+			&:-ms-input-placeholder      {color:$l-gray2;}
+		}
+	}
+	&__messages{
+		&-box{
+			margin-bottom: 30px;
+		}
+		&-photo{	
+			margin-right: 45px;
+			img{
+				border-radius: 50%;
+			}
+		}
+		&-name{
+			position: relative;
+			color: $l-blue2;
+			line-height: 1;
+			margin-bottom: 13px;
+			&-notification{
+				position: absolute;
+			    width: 10px;
+			    height: 10px;
+			    border-radius: 50%;
+			    left: -25px;
+			    top: 3px;
+			    background-color: $l-blue7;
+			}
+		}
+		&-position{
+			position: relative;
+			color: $m-gray;
+			line-height: 1;
+			&-comment{
+			 	position: absolute;
+			    left: -25px;
+			    top: 1px;
+			    .far{
+			    	color: $l-gray10;
+			    	font-size: 1.3rem;
+			    }
+			}
+		}
+		&-date{
+			width: 74px;
+			margin-top: 11px;
+			line-height: 1;
+			color: $l-gray9;
+			@include font($os, 1.3rem, 400);
+			font-style: italic;
+		}
+	}
+}

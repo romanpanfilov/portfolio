@@ -1,0 +1,91 @@
+.at-estimation{
+	min-height: 100vh;
+	background: transparent url(img/finance.jpg) center no-repeat;
+	background-size: cover;
+	&__content-box{
+		min-height: 100vh;
+		background: rgb(197,152,253);
+        background: -moz-linear-gradient(left,  rgba(197,152,253,1) 0%, rgba(119,112,253,1) 50%, rgba(92,218,252,1) 100%);
+        background: -webkit-linear-gradient(left,  rgba(197,152,253,1) 0%,rgba(119,112,253,1) 50%,rgba(92,218,252,1) 100%);
+        background: linear-gradient(to right,  rgba(197,152,253,1) 0%,rgba(119,112,253,1) 50%,rgba(92,218,252,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c598fd', endColorstr='#5cdafc',GradientType=1 );
+		
+	}
+	
+	&__title{
+	    color:  $white;
+	    @include font($os, 1.4rem, 700);
+	    letter-spacing: 2px;
+	    text-transform: uppercase;
+	    margin-bottom: 40px;
+	}
+	&__input{
+		border: 0px solid #000;
+		background-color: transparent;
+		color:  $white;
+	    @include font($os, 1.5rem $im, 600);
+	    padding: 0 $im;
+	    margin-right: 52px;
+	}
+	&__form{
+		
+		border-radius: 30px $im;
+		background-color: transparent;
+		border: 1px solid $l-blue4 $im;
+		height: 32px $im;
+		color: $white;
+		// max-width: 368px $im;
+		// width: 100% $im;
+		padding-left: 19px $im;
+		&::-webkit-input-placeholder {color:$white;}
+		&::-moz-placeholder          {color:$white;}
+		&:-moz-placeholder           {color:$white;}
+		&:-ms-input-placeholder      {color:$white;}
+	    @include font($os, 1.5rem $im, 300 $im);
+		
+		&:focus{
+			background-color: transparent;
+			border-color: $l-blue4 $im;
+			color: $white;
+		}
+	}
+	&__content{
+		max-width: 500px;
+		width: 100%;
+	}
+	&__dropdown{
+		background-color: $tr;
+	    padding: 0 0 0 17px;
+		border: 0 $im;
+		color: $white;
+		height: 30px;
+		@include font($os, 1.5rem $im, 400);
+		&:focus {
+	    	background-color: $tr;
+	    	color: $white;
+	    	box-shadow: 0 0 0 0 rgba(0,123,255,0) $im;
+	    	option{
+	    	    	color:  $black;
+	    	    }
+	    	}
+
+	&-box{
+	    background-color: $tr;
+	    border: 1px solid $l-blue4;
+	    border-radius: 30px;
+	    height: 32px;
+	    padding-right: 10px;
+	}
+
+	}
+	&__total{
+		margin-top: 45px;
+		@include font($os, 1.8rem $im, 600);
+		color: $white;
+		&-price{
+			@include font($os, 1.8rem $im, 400);
+			margin-left: 22px;
+		}
+	}
+	
+}

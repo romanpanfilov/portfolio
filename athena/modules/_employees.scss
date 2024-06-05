@@ -1,0 +1,82 @@
+.at-employees{
+	background: rgb(169,158,250);
+    background: -moz-linear-gradient(left,  rgba(169,158,250,1) 0%, rgba(161,122,249,1) 51%, rgba(233,199,250,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(169,158,250,1) 0%,rgba(161,122,249,1) 51%,rgba(233,199,250,1) 100%);
+    background: linear-gradient(to right,  rgba(169,158,250,1) 0%,rgba(161,122,249,1) 51%,rgba(233,199,250,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a99efa', endColorstr='#e9c7fa',GradientType=1 );
+    &__slogan{
+	color: $white;
+    @include font($os, 1.7rem, 700);
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    &-box{
+    	position: relative;
+	&:before{
+		position: absolute;
+		background-color: $white;
+		content: "";
+		display: block;
+		width: 4px;
+		height: calc(100% - 11px);
+	    left: 0px;
+	    top: 50%;
+	    transform: translate(0, -50%);
+	}
+	}
+}
+&__box{
+	min-height: 100vh;
+}
+&__title{
+	margin-bottom: 25px;
+	color: $white;
+    
+}
+&__subtitle{
+	color: $white;
+    margin-bottom: 35px;
+}
+
+&__form-box{
+	position: relative;
+}
+&__input{
+	border-color: $l-gray1;	
+	border-radius: 30px $im;
+	@include font($os, 1.6rem, 400);
+	color: $l-gray2;
+	z-index: 0;
+	&::-webkit-input-placeholder {color:$m-gray;}
+		&::-moz-placeholder          {color:$m-gray;}
+		&:-moz-placeholder           {color:$m-gray;}
+		&:-ms-input-placeholder      {color:$m-gray;}
+	&:focus{
+		z-index: 0;
+	}
+}
+&__icon{
+	position: absolute;
+	top: 23px;
+	left: 32px;
+	z-index: 9;
+	font-size: 16px;
+	color: $black;
+}
+
+&__text{
+    @include font($os, 1.8rem, 300);
+	color: $white;
+}
+&__link{
+	@include font($os, 1.8rem, 600);
+	color: $l-blue1;
+	&:hover{
+		color: $l-blue1;
+	}
+}
+&__btn-icon{
+	margin-right: 39px;
+}
+
+}

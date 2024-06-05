@@ -1,0 +1,32 @@
+.e-fan{
+	padding-top: 55px;
+	padding-bottom: 100px;
+	&__box{
+		border: 3px dotted $l-gray5;
+		position: relative;
+		padding: 55px;
+		display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+	&__icon{
+		position: absolute;
+		top: 20px;
+	    z-index: -1;
+	    .far{
+	    	font-size: 128px;
+	    	color: $l-gray1;
+	    }
+	}
+	&__numb{
+		@include font($p, 2rem, 700, 1);
+		color: $black;		
+		text-align: center;
+	}
+	&__info{
+		@include font($p, 1rem, 400, 1);
+		color: $black;		
+		text-align: center;
+		margin-top: 7px;
+	}
+}

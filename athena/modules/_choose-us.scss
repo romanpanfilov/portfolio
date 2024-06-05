@@ -1,0 +1,42 @@
+.at-choose-us{
+	background-color: $white;
+	&__line{
+	position: relative;
+	&:before{
+			position: absolute;
+			content: "";
+			width: 100%;
+			max-width: 100px;
+			height: 1px;
+			background-color: $l-gray5;
+			top: 0;
+			left: 0;
+		}
+	}
+	&__subtitle{
+		color: $l-blue2;
+    	@include font($os, 1.4rem, 700);
+    	letter-spacing: 2px;
+	}
+	&__title{
+		color: $d-blue;
+    	
+	}
+	&__name{
+		line-height: .8;
+		color: $black;
+    	@include font($os, 2.2rem, 300);
+    	margin-bottom: 19px;
+	}
+	&__desc{
+		color: $m-gray;
+    	@include font($os, 1.5rem, 400);
+	}
+	&__icon-box{	
+		flex: 0 0 50px;
+		max-width: 50px;
+	}
+	&__info-box{
+		margin-bottom: 55px;
+	}
+}

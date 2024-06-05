@@ -1,0 +1,58 @@
+.at-services{
+	background-color: $white;
+&__title{
+	color: $l-blue2;
+    @include font($os, 1.4rem, 700);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &-name{
+    	@include font($os, 2.2rem, 600);
+    	color: $black;
+    	margin-top: 25px;
+    	line-height: 0.80;
+    	margin-bottom: 18px;
+    }
+}
+&__text{
+	color: $m-gray;
+    @include font($os, 1.4rem, 400);
+    margin-bottom: 70px;
+    &-link{
+		color: $l-blue2;
+		&:hover{
+			color: $l-blue2;
+		}
+    }
+}
+&__circle{
+	height: 220px;
+	border-radius: 50%;
+	max-width: 220px;
+    width: 100%;
+    background-color: $l-blue1;
+    overflow: hidden;
+    margin: 0 auto;
+    &-img{
+    	
+    	opacity: 1;
+    }
+}
+
+&__subtitle{
+	color: $m-gray;
+    @include font($os, 1.2rem, 400);
+    text-transform: uppercase;
+    &-link{
+    	color: $l-blue2
+    }
+}
+&__circlebox{
+	display: block;
+	&:hover .at-services__circle-img{
+		opacity: 0.5;
+	}
+	&:hover .at-services__title-name{
+		color: $l-blue2;
+	}
+}
+}

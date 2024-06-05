@@ -1,0 +1,116 @@
+
+.i-portfolio{
+	padding-bottom: 50px;
+	background-color: $d-gray2;
+	min-height: 100vh;
+	&__title{
+		color: $l-gray1;
+    	@include font($m, 2rem, 400, 1);
+	}
+
+	&__box{
+		// transform: translate(0px, 160px);
+		overflow: hidden;
+		padding: 25px;
+		opacity: 0;
+		margin-bottom: 70px;
+	    justify-content: center;
+		border: 2px solid $l-gray1;
+		transition: 0.5s;
+	    position: relative;
+	    border-radius: 10px;
+	    display: flex;
+	    align-items: center;
+		transform: translateY(70px);
+	   
+	}
+	.animated{
+		&.i-portfolio__box{
+			transform: translateY(0px);
+		    opacity: 1;
+			&.port1{
+				transition-delay: 0.2s;
+			}
+			&.port2{
+				transition-delay: 0.3s;
+			}
+			&.port3{
+				transition-delay: 0.4s;
+			}
+		}
+	}
+	// [data-animate] {
+	//     transform: translateY(-100px);
+	//     opacity: 1;
+	// 	}
+	&__icon{
+		&-box{
+			position: relative;
+		}
+		flex: 0 0 60px;
+	    width: 60px;
+		transition: 0.5s;
+		position: absolute;
+		top: 40px;
+		left: 25px;
+		opacity: 1;
+		&-red{
+			flex: 0 0 60px;
+		    width: 60px;
+			position: absolute;
+			top: 40px;
+			transition: 0.5s;
+		}
+	}
+	&__name{
+    	letter-spacing: 10px;
+	    margin-left: 10px;
+	    text-transform: uppercase;
+	    transition: 0.4s;
+	}
+	&__number{
+	    text-align: center;
+		position: absolute;
+		bottom: 40px;	
+    	@include font($m, 3rem, 600, 1);
+    	transition: 0.5s;
+    	&-middle{
+			width: 60px;
+    	}
+    	&-long{
+    		width: 134px;
+    	}
+	}
+	&__bg{
+	    min-height: 100%;
+		position: absolute;
+		opacity: 0.2;
+		transition: 0.5s;
+	}
+	.empty{
+		min-height: 260px;
+		&:active{
+	    	border: 2px solid $l-gray1 $im;
+	    	transition: 0.1s;
+	    	background-color: $tr;
+	    	transform: scale(1) $im;
+	    }
+	    &:hover{
+			border: 2px solid $l-gray1;
+	    }
+		&__point{
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: $i-red;
+			& + .empty__point{
+				margin-left: 10px;
+			}
+		}
+	}
+	&__two{
+		height: 100vh;
+		background-color: $d-gray3;
+	
+	}
+}

@@ -1,0 +1,143 @@
+.jx-menu{
+	background-color: $White;
+	
+	h2.jaxon{
+		cursor: pointer;
+		padding-top: 46px;
+		font-family: $Montserrat;
+		color: $liht-gray2;
+		font-size: 29px;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin-bottom: 8px;
+		margin-top: 0;
+		line-height: 22px;
+		letter-spacing: 1px;
+
+	}
+	.colbox-inform{
+		padding-left: 0;
+	}
+	&-x{
+		cursor: pointer;
+		font-family: $Montserrat;
+		color: $copper;
+		font-size: 29px;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+	p{
+		cursor: pointer;
+		color: $dark-blue;
+		font-family: $Roboto;
+		font-size: 14px;
+		margin: 0;
+		line-height: 12px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		padding-bottom: 44px;
+	}
+
+	&-box-clock{
+		margin-top: 30px;
+		border-left: 1px solid $White-gray;
+		border-right: 1px solid $White-gray;
+		margin-bottom: 26px;
+		.clock{
+           margin-left: 30px;
+			padding-top: 20px;
+			display: block;
+			float: left;
+		}
+		
+
+		 h3.time{
+		 	letter-spacing: 1px;
+            padding-top: 20px;
+		 	padding-left: 14px;
+		 	display: inline-block;
+			color: $gray2;
+			font-family: $Roboto;
+			font-size: 15px;
+			margin: 0;
+			font-weight: 600;
+			line-height: 13px;
+		}
+		p.sc{
+			padding-left: 14px;
+			display: inline-block;
+			color: $gray2;
+			font-family: $Roboto;
+			font-size: 14px;
+			padding-bottom: 23px;
+		}
+	
+	}
+	&-box-fone{
+        margin-right: 8px;
+		margin-top: 30px;
+		border-right: 1px solid $White-gray;
+		margin-bottom: 26px;
+        .fone{
+
+			padding-top: 17px;
+			display: block;
+			float: left;
+        }
+        h3.number{
+        	letter-spacing: 1px;
+            padding-top: 20px;
+		 	padding-left: 14px;
+		 	display: inline-block;
+			color: $gray2;
+			font-family: $Roboto;
+			font-size: 15px;
+			margin: 0;
+			font-weight: 600;
+			line-height: 13px;
+        }
+        p.info{
+        	padding-left: 14px;
+			display: inline-block;
+			color: $gray2;
+			font-family: $Roboto;
+			font-size: 14px;
+			padding-bottom: 23px;
+        }
+	}
+	.colbox-Location{
+		padding-left: 0;
+	}
+
+	&-box-Location{
+		margin-top: 30px;
+		
+		margin-bottom: 26px;
+	}
+	.Location{
+		padding-top: 17px;
+			display: block;
+			float: left;
+	}
+	h3.point{
+		letter-spacing: 1px;
+            padding-top: 20px;
+		 	padding-left: 10px;
+		 	display: inline-block;
+			color: $gray2;
+			font-family: $Roboto;
+			font-size: 15px;
+			margin: 0;
+			font-weight: 600;
+			line-height: 13px;
+	}
+	p.adress{
+		padding-left: 10px;
+			display: inline-block;
+			color: $gray2;
+			font-family: $Roboto;
+			font-size: 14px;
+			padding-bottom: 23px;
+	}
+}

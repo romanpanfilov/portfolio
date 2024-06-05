@@ -1,0 +1,439 @@
+.bz-posts{
+	padding-bottom: 60px;
+	
+	&__image{
+		height: 175px;
+		overflow: hidden;
+		background-size: cover;
+		margin-bottom: 13px;
+	}
+	&__categories{
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	&__category{
+		@include font($font__main, 1.2, 600, $color__link);
+		line-height: 14px;
+		text-transform: uppercase;
+		margin-bottom: 6px;
+		margin-right: 5px;
+		&:hover, &:focus{
+			color: $color__background-green $im;
+		}
+		&:visited{
+			color: $color__link;
+		}
+	}
+	&__title{
+		display: block;
+		@include font($font__main, 1.8, 500, $color__link);
+		line-height: 22px;
+		margin-bottom: 11px;
+		max-height: 64px;
+		overflow: hidden;
+		&:hover, &:focus{
+			color: $color__background-green $im;
+		}
+		&:visited{
+			color: $color__link;
+		}
+	}
+	&__desc{
+		display: block;
+		@include font($font__main, 1.4, 400, $color__text-l);
+		line-height: 17px;
+		max-height: 37px;
+		overflow: hidden;
+	}
+	&__badge{
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			top: -4px;
+			padding: 0 6px;
+			@include font($font__main, 1.2, 600, $color__link-d);
+			text-align: center;
+			line-height: 22px;
+			text-transform: uppercase;
+
+		&--promo{
+			background-color: $color__background-badge;
+		}
+	}
+	&__full{
+		min-height: 390px;
+		height: calc(100% - 40px);
+		background-size: cover;
+		padding: 25px 20px 30px 20px;
+		margin-bottom: 40px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		&:hover{
+			.bz-posts__full-title{
+				color: $color__background-badge;
+			}
+		}
+		&-info{}
+		&-badge{
+			display: block;
+			margin-bottom: 10px;
+			max-width: 60px;
+			width: 100%;
+			padding: 0 6px;
+			@include font($font__main, 1.2, 600, $color__link-d);
+			text-align: center;
+			line-height: 22px;
+			text-transform: uppercase;
+			&--promo{
+				background-color: $color__background-badge;
+			}
+		}
+		&-categories{
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+		}
+		&-category{
+			@include font($font__main, 1.3, 500, $color__link-d);
+			line-height: 14px;
+			text-transform: uppercase;
+			margin-bottom: 7px;
+			margin-right: 12px;
+			&:hover, &:focus{
+				color: $color__background-green $im;
+			}
+			&:visited{
+				color: $color__link-d;
+			}
+		}
+		&-title{
+			@include font($font__main, 2, 500, $color__link-d);
+			line-height: 24px;
+			margin-bottom: 6px;
+			display: block;
+			&:hover, &:focus{
+				color: $color__background-green $im;
+			}
+			&:visited{
+				color: $color__link-d;
+			}
+		}
+		&-desc{
+			display: block;
+			@include font($font__main, 1.4, 400, $color__text-sl);
+			line-height: 17px;
+		}
+	}
+	&__fill{
+		min-height: 390px;
+		height: calc(100% - 40px);
+		background-color: $color__background-green;
+		padding: 22px 30px 20px 30px;
+		margin-bottom: 40px;
+		text-align: center;
+		&:hover{
+			.bz-posts__fill-title{
+				font-weight: 600;
+			}
+		}
+		&-info{}
+		&-badge{
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			max-width: 60px;
+			width: 100%;
+			padding: 0 6px;
+			@include font($font__main, 1.2, 600, $color__link);
+			text-align: center;
+			line-height: 22px;
+			text-transform: uppercase;
+			&--promo{
+				background-color: $color__background-body;
+			}
+		}
+		&-categories{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			position: relative;
+		}
+		&-category{
+			@include font($font__main, 1.3, 500, $color__link-d);
+			line-height: 14px;
+			text-transform: uppercase;
+			&:hover, &:focus{
+				color: $color__link-d;
+				text-decoration: underline;
+			}
+			&:visited{
+				color: $color__link-d;
+			}
+		}
+		&-title{
+			@include font($font__main, 2.4, 500, $color__link-d);
+			line-height: 38px;
+			margin-bottom: 6px;
+			display: block;
+			&:hover, &:focus{
+				color: $color__link-d;
+			}
+			&:visited{
+				color: $color__link-d;
+			}
+		}
+	}
+	&__big{
+		height: calc(100% - 40px);
+		margin-bottom: 40px;
+		border: 2px solid $color__border;
+		padding-bottom: 30px;
+		&:hover{
+			.bz-posts__big-image{
+				opacity: .7;
+			}
+			.bz-posts__big-title{
+				color: $color__background-green;
+			}
+		}
+		&-image{
+			margin-bottom: 17px;
+			position: relative;
+			background-color: $color__background-green;
+			height: 294px;
+			background-size: cover;
+		}
+		&-info{
+			padding: 0 20px;
+		}
+		&-badge{
+			position: absolute;
+			top: 19px;
+			left: 20px;
+			display: block;
+			margin-bottom: 10px;
+			max-width: 60px;
+			width: 100%;
+			padding: 0 6px;
+			@include font($font__main, 1.2, 600, $color__link-d);
+			text-align: center;
+			line-height: 22px;
+			text-transform: uppercase;
+			&--promo{
+				background-color: $color__background-badge;
+			}
+		}
+		&-categories{
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			margin-bottom: 5px;
+		}
+		&-category{
+			@include font($font__main, 1.2, 600, $color__link-l);
+			line-height: 14px;
+			text-transform: uppercase;
+			margin-right: 5px;
+			&:hover, &:focus{
+				color: $color__background-green $im;
+			}
+			&:visited{
+				color: $color__link-l;
+			}
+		}
+		&-title{
+			@include font($font__main, 2, 500, $color__link-l);
+			line-height: 24px;
+			margin-bottom: 10px;
+			display: block;
+			&:hover, &:focus{
+				color: $color__background-green $im;
+			}
+			&:visited{
+				color: $color__link-l;
+			}
+		}
+		&-desc{
+			display: block;
+			@include font($font__main, 1.4, 400, $color__text-l);
+			line-height: 17px;
+		}
+	}
+	&__item{
+		height: calc(100% - 40px);
+		margin-bottom: 40px;
+		border: 2px solid $color__border;
+		padding-bottom: 30px;
+
+		&:hover{
+			.bz-posts__item-image{
+				opacity: .7;
+			}
+			.bz-posts__item-title{
+				color: $color__background-green;
+			}
+		}
+		&-image{
+			margin-bottom: 17px;
+			position: relative;
+			background-color: $color__background-green;
+			background-size: cover;
+			height: 280px;
+		}
+		&-info{
+			padding: 0 20px;
+		}
+		&-badge{
+			position: absolute;
+			top: 19px;
+			left: 20px;
+			display: block;
+			margin-bottom: 10px;
+			max-width: 60px;
+			width: 100%;
+			padding: 0 6px;
+			@include font($font__main, 1.2, 600, $color__link-d);
+			text-align: center;
+			line-height: 22px;
+			text-transform: uppercase;
+			&--promo{
+				background-color: $color__background-badge;
+			}
+		}
+		&-categories{
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			align-items: center;
+			margin-bottom: 6px;
+			@include font($font__main, 1.2, 600, $color__link);
+		}
+		&-category{
+			@include font($font__main, 1.2, 600, $color__link-l);
+			line-height: 14px;
+			text-transform: uppercase;
+			margin-right: 5px;
+			&:hover, &:focus{
+				color: $color__background-green $im;
+			}
+			&:visited{
+				color: $color__link-l;
+			}
+		}
+		&-title{
+			@include font($font__main, 1.8, 500, $color__link-l);
+			line-height: 24px;
+			margin-bottom: 10px;
+			display: block;
+			&:hover, &:focus{
+				color: $color__background-green;
+			}
+			&:visited{
+				color: $color__link-l;
+			}
+		}
+		&-desc{
+			display: block;
+			@include font($font__main, 1.4, 400, $color__text-l);
+			line-height: 17px;
+		}
+	}
+	&__side{
+		&-item{
+			padding-bottom: 11px;
+			margin-bottom: 22px;
+			&--line{
+				border-bottom: 2px solid #000;
+			}
+		}
+		&-categories{
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+		}
+		&-category{
+			@include font($font__main, 1.2, 600, $color__link);
+			line-height: 14px;
+			text-transform: uppercase;
+			margin-bottom: 6px;
+			margin-right: 5px;
+		}
+		&-title{
+			display: block;
+			@include font($font__main, 1.8, 500, $color__link);
+			line-height: 22px;
+			margin-bottom: 11px;
+			max-height: 64px;
+			overflow: hidden;
+		}
+		&-desc{
+			display: block;
+			@include font($font__main, 1.4, 400, $color__text-l);
+			line-height: 17px;
+			max-height: 37px;
+			overflow: hidden;
+		}
+	}
+	&__no-image{
+		background-color: $color__background-section;
+		padding: 40px 20px;
+		margin-bottom: 40px;
+		text-align: center;
+		&:hover{
+			.bz-posts__no-image-title{
+				color: $color__background-green;
+			}
+		}
+		&-categories{
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 6px;
+			@include font($font__main, 1.3, 600, $color__link);
+		}
+		&-category{
+			@include font($font__main, 1.3, 600, $color__link);
+			line-height: 16px;
+			text-transform: uppercase;
+			margin-right: 5px;
+			margin-left: 5px;
+			&:hover, &:focus{
+				color: $color__background-green;
+			}
+		}
+		&-title{
+			margin: 0 auto;
+			display: block;
+			@include font($font__secondary, 3.6, 300, $color__link);
+			line-height: 43px;
+			margin-bottom: 13px;
+			max-width: 760px;
+		}
+		&-text{
+			@include font($font__main, 1.6, 400, $color__text-l);
+			line-height: 19px;
+		}
+	}
+	&__btn{
+		display: inline-block;
+		padding: 15px 30px 16px 30px;
+		max-width: 200px;
+		width: 100%;
+		border: 2px solid $color__btn-border;
+		border-radius: 200px;
+		text-transform: uppercase;
+		@include font($font__main, 1.4, 600, $color__link);
+		&:hover, &:focus{
+			color: $color__background-green;
+		}
+	}
+	&__ad{
+		margin-bottom: 40px;
+		&-link{
+			display: block;
+		}
+	}
+}

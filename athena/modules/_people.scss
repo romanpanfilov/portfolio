@@ -1,0 +1,53 @@
+.at-people{
+	background-color: $white;
+	padding-top: 37px;
+	position: relative;
+	&:before{
+		content: "";
+		top: 0;
+		position: absolute;
+		display: block;
+		height: 1px;
+		background-color: $l-gray1;
+	}
+	&__title{
+		color: $black;
+		line-height: 1;
+    	@include font($os, 1.6rem, 600);
+    	margin-bottom: 40px;
+	}
+	&__dots-box{
+		display: block;
+	}
+	&__subtitle{
+		color: $m-gray;
+		line-height: 1;
+    	@include font($os, 1.6rem, 400);
+    	&-number{
+    		@include font($os, 1.8rem, 700);
+    	}
+	}
+	&__photo{
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	&__number-more{
+		display: block;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		background-color: $l-blue2;
+		color: $white;
+		line-height: 44px;
+    	@include font($os, 1.3rem, 300);
+    	text-align: center;
+    	transition: 0.5s;
+    	&:hover{
+    		transition: 0.5s;
+    		background-color: $l-blue1;
+    		color: $l-gray4;
+    	}
+	}
+}

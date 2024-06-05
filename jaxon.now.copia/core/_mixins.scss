@@ -1,0 +1,7 @@
+@mixin text($a: $Roboto,$b: 14px,$c: 400){
+	font:{
+		family: $a;
+		size: $b;
+		weight: $c;s
+	}
+}

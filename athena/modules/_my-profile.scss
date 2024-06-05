@@ -1,0 +1,321 @@
+.at-my-profile{
+	&__edit{
+		&-file{
+			display: none;
+		}
+		&-text{
+			line-height: 1;
+			color: $white;
+			@include font($os, 1.4rem, 400);
+			}
+		&-picture{
+			display: block;
+			position: absolute;			
+			background-color: $black;
+			border-radius: 30px;	
+			transition: 0.5s;	
+			.fas{
+				color: $white;
+				font-size: 18px;
+				margin-right: 14px;
+			}
+			&:hover{
+			    opacity: 1;
+			}
+		}
+	}
+	&__auhtor{
+		position: relative;
+		margin-top: -87px;
+		width: 170px;
+		flex: 0 0 170px;
+		img{
+			border: 8px solid $white;
+			border-radius: 50%;
+		}
+		&-edit{
+			&-photo{
+				display: block;
+				width: 40px;
+				height: 40px;
+				top: 3px;
+				right: 11px;
+				text-align: center;
+				position: absolute;
+				border-radius: 50%;
+				background-color: $l-blue2;
+				.fas{
+					font-size: 17px;
+					color: $white;
+					line-height: 2.5;
+				}
+			}
+		}
+	}
+	&__link{
+		&-box{
+			margin-bottom: 20px;
+		}
+		display: block;
+		background-color: $l-blue5;
+		border-radius: 50%;		
+		text-align: center;
+		border: 1px solid $tr;
+		transition: 0.5s;		
+		.fab{
+			transition: 0.5s;
+			font-size: 18px;
+			color: $l-gray5;
+		}
+		&:hover{
+			background-color: $white;
+			border: 1px solid $m-gray;
+			.fab{
+				color: $l-blue9;
+			}
+		}
+		&-education{
+			line-height: 1;
+			color: $m-gray;
+			@include font($os, 1.4rem, 400);
+			margin-right: 30px;
+			.fas{
+				font-size: 14px;
+				color: $m-gray;
+				margin-right: 10px;
+			}
+		}
+		&-website{
+			&-box{
+				margin-bottom: 22px;
+			}
+			line-height: 1;
+			color: $m-gray;
+			@include font($os, 1.4rem, 400);
+			transition: 0.5s;
+			&:hover{
+				color: $l-blue9;
+			}
+		}
+		&-location{
+			line-height: 1;
+			color: $m-gray;
+			@include font($os, 1.4rem, 400);
+			margin-right: 30px;
+			.fas{
+				font-size: 14px;
+				color: $m-gray;
+				margin-right: 17px;
+			}
+		}
+		&-time{
+			line-height: 1;
+			color: $m-gray;
+			@include font($os, 1.4rem, 400);
+		}
+	}
+	&__name{
+		line-height: 1;
+		color: $l-blue2;
+		@include font($os, 2.2rem, 400);
+		margin-bottom: 22px;
+		transition: 0.5s;
+	}
+	&__position{
+		line-height: 1;
+		color: $black;
+		@include font($os, 1.4rem, 600);
+		margin-bottom: 13px;
+	}
+	&__company{
+		line-height: 1;
+		color: $black;
+		@include font($os, 1.4rem, 600);
+		margin-bottom: 13px;
+	}
+	&__people{
+		&-box{
+			.fas{
+			font-size: 16px;
+			color: $m-gray;
+			margin-right: 18px;
+		}
+		}
+		
+		line-height: 1;
+		color: $black;
+		@include font($os, 1.4rem, 600);
+	}
+	&__salary{
+		text-align: right;
+		&-bold{
+			line-height: 1;
+			color: $black;
+		}
+			line-height: 1;
+			color: $black;
+			@include font($os, 1.4rem, 600);
+		&-text{
+			text-align: right;
+			line-height: 1;
+			color: $m-gray;
+			@include font($os, 1.4rem, 600);
+			margin-bottom: 15px;
+		}
+		
+	}
+	&__viewed{
+		text-align: right;
+		line-height: 1;
+		color: $m-gray;
+	}
+	&__wrap{
+		margin-top: 20px;
+	}
+	&__connection{
+		&-box{
+			margin-bottom: 67px;
+		}
+		&-people{
+			&-box{
+				margin-right: 14px;
+			}
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			border: 2px solid $white;
+			overflow: hidden;
+			border-radius: 50%;
+			& + .at-my-profile__connection-people{
+			margin-left: -15px;
+		}
+		}
+		&-list{
+			& + .at-my-profile__connection-list:before{
+				content: "·";
+				position: relative;
+				margin-left: 6px;
+				margin-right: 3px;
+			}
+			&-box{
+				list-style-type: none;
+				padding: 0;
+			}
+			color: $m-gray;
+			line-height: 25px;
+	    	@include font($os, 1.4rem, 600);
+		}
+	}
+	&__btn{
+		&-box{
+			margin-bottom: 70px;
+		}
+		&-left{	
+			display: block;
+			border-radius: 35px;			
+			background-color: $white;
+			box-shadow: 0px 2px 27px 10px rgba(204,204,223,0.19);			
+			color: $black;
+			line-height: 1;	
+	    	transition: 0.5s;
+	    	margin-right: 32px;
+	    	&:hover{
+	    		background-color: $l-blue6;
+	    		color: $l-black;
+	    	}
+		}
+		&-right{	
+			display: block;
+			border-radius: 35px;
+			background-color: $l-blue1;			
+			color: $white;
+			line-height: 1;
+	    	transition: 0.5s;
+	    	&:hover{
+	    		background-color: $l-blue2;
+	    		color: $m-white2;
+	    	}
+		}		
+	}
+	&__info{
+		&-box{
+			padding: 28px 30px;
+			border: 1px solid $l-gray1;
+			margin-bottom: 85px;
+		}
+			&-desc{
+				text-transform: uppercase;
+				color: $black;
+				line-height: 1;
+		    	@include font($os, 1.3rem, 600);
+		    	margin-bottom: 11px;
+			}
+			&-text{
+				color: $m-gray;
+				line-height: 1;
+		    	@include font($os, 1.4rem, 600);
+			}
+		}
+		&__project{
+			&-box{
+				margin-bottom: 38px;
+			}
+			&-text{
+				color: $l-blue2;
+			    @include font($os, 1.4rem, 700);
+			    letter-spacing: 2px;
+			    text-transform: uppercase;
+			}
+			&-link{
+				width: 35px;
+				height: 35px;
+				background-color: $l-blue1;
+				text-align: center;
+				margin-right: 18px;
+				border-radius: 50%;
+				line-height: 32px;
+				transition: 0.5s;
+				&-box{
+					&:hover .at-my-profile__project-link{
+						background-color: $l-blue2;
+				}
+				}
+			}
+			&-add{
+				color: $l-gray2;
+				line-height: 1;
+		    	@include font($os, 1.4rem, 600);
+			}
+		}
+		&__img{
+			&-wrap{
+				margin-bottom: 60px;
+			}
+			&-box{
+				display: block;
+				position: relative;
+				&:hover .at-my-profile__img-info-box{
+					opacity: 1;
+				}
+			}
+			&-info{
+				&-box{
+					text-align: center;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					background-color: $l-blue1;
+					transition: 0.5s;
+				}
+				&-text{
+					margin-top: 18px;
+					color: $white;
+					line-height: 1;
+			    	@include font($os, 1.5rem, 600);
+				}
+			}
+		}
+}

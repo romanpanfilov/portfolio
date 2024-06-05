@@ -1,0 +1,163 @@
+.jx-blogs{
+background-color: $White;
+padding-top: 100px;
+padding-bottom: 100px;
+&__title{
+	padding-bottom: 84px;
+	font: {
+     family: $PT;
+     size: 30px;
+     weight: 400; 
+	}
+	color: $liht-gray2;
+}
+&__title--bold{
+	font: {
+     family: $PT;
+     size: 30px;
+     weight: 700; 
+	}
+	color: $liht-gray2;
+}
+
+&__divider{
+	padding-top: 20px;
+	padding-bottom: 27px;
+}
+
+&__subtitle{
+	font: {
+     family: $Montserrat;
+     size: 18px;
+     weight: 700; 
+	}
+	text-transform: uppercase;
+	color: $liht-gray2;
+}
+&__img{
+	height: 360px;
+	overflow: hidden;
+	position: relative;
+	
+	background: #fff url(img/florian.jpg) center no-repeat;
+	background-size: cover;
+   
+  
+}
+&__img--mobile{
+	@media (min-width:320px) and (max-width: 516px){
+		padding-top: 50px;
+	}
+	@media (min-width:517px) and (max-width: 990px){
+		padding-top: 50px;
+	}
+}
+
+&__calendar{
+	height: 60px;
+	width: 60px;
+position: absolute;
+top: 0;
+right: 0;
+background-color: $light-blue;
+padding:6px 14px ;
+}
+&__caltext{
+	line-height: 4px;
+	font: {
+     family: $PT;
+     size: 16px;
+     weight: 400; 
+	}
+	color: $White;
+}
+&__caltext--size{
+	font: {
+     family: $PT;
+     size: 26px;
+     weight: 600; 
+	}
+}
+&__bg{
+	width: 100%;
+	max-width: 290px;
+	position: absolute;
+	padding:19px 20px ;
+bottom: 0;
+left: 0;
+background-color: $light-blue;
+text-align: left;
+font: {
+     family: $Montserrat;
+     size: 16px;
+     weight: 400; 
+	}
+	color: $White;
+
+	@media (min-width:320px) and (max-width: 516px){
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
+&__desc{
+	padding-top: 20px;
+	overflow: hidden;
+	height: 83px;
+	font: {
+     family: $Roboto;
+     size: 16px;
+     weight: 400; 
+	}
+	line-height: 28px;
+	color: $gray2;
+}
+
+a.jx-blogs__RM{
+	height: 0;
+	text-decoration: none;
+	font: {
+     family: $Roboto;
+     size: 16px;
+     weight: 400; 
+     style : italic;
+	}
+	color: $copper;
+}
+&__Read-More{
+	
+
+}
+&__rm-span{
+border-bottom: 1px solid $copper;
+padding-right: 8px;
+}
+
+
+&__a-caret{
+	
+	color: $copper;
+}
+&__rm-bottom{
+	padding-bottom: 60px;
+}
+&__button{
+   background-color: $copper;
+   border: 0px solid #000;
+   font: {
+     family: $Montserrat;
+     size: 13px;
+     weight: 700; 
+	}
+	text-transform: uppercase;
+	color: $White;
+	padding: 20px 35px;
+  }
+
+  &__caret{
+  	margin-left: 20px;
+  }
+
+}
+

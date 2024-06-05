@@ -1,0 +1,165 @@
+.e-gear{
+	min-height: 100vh;
+    background: transparent url(img/img-bg.png) no-repeat;
+    background-size: cover;
+   
+    &__box{
+    	border: 3px dotted $l-gray5;
+    	border-radius: 50%;
+    	min-width: 250px;
+	    height: 250px;
+	    position: absolute;
+	    &-two{
+	    	border: 3px dotted $l-gray5;
+	    	border-radius: 50%;
+	    	min-width: 250px;
+		    height: 250px;
+		   	right: 0;
+		    position: absolute;
+	    }
+    }
+    &__bd{
+    	border: 20px solid $white;
+    	border-radius: 50%;
+    	min-width: 250px;
+	    height: 250px;
+	    overflow: hidden;
+	    position: absolute;
+	    z-index: -1;
+		left: -2px;
+	    top: -3px;
+	    &-two{
+	    	border: 20px solid $white;
+	    	border-radius: 50%;
+	    	max-width: 250px;
+		    height: 250px;
+		    overflow: hidden;
+		    position: absolute;
+		    z-index: -1;
+		    top: 0px;
+	    }
+    }
+    &__img{
+    	margin-left: -50px;
+    	&-two{
+    		margin-left: 50px;
+    	}
+    }
+	&__title{
+		@include font($p, 2.2rem, 600, 1);
+		color: $d-gray2;
+		margin-bottom: 15px;
+	}
+	&__text{
+		@include font($p, 1rem, 400, 1.3);
+		color: $d-gray2;
+		margin-bottom: 20px;
+	}
+	&__subtext{
+		@include font($p, 0.9rem, 400, 1.7);
+		color: $l-blue;
+		margin-left: 20px;
+		&-icon{
+			.fas{
+				color: $e-violet;
+			}
+		}
+		&-box + .e-gear__subtext-box{
+			margin-top: 8px;
+		}
+	}
+	&__cont{
+		margin-top: 30px;
+		margin-bottom: 75px;
+	}
+    .bx-wrapper{
+		box-shadow: 0 0 0px #ccc $im;
+ 		border: 0px solid #fff $im;
+	    background: $tr;
+	    margin-bottom: 0px;
+	}
+	.bx-wrapper .bx-controls-direction a{
+		text-indent: 0px;
+		top: 49%;
+	}
+	.bx-wrapper .bx-controls-direction a.disabled{
+		display: block;
+	}
+	.bx-wrapper .bx-pager{
+		display: none;
+	}
+	.bx-viewport{
+		height: 630px $im;
+	}
+	.bx-wrapper .bx-next{
+		right: -79px $im;
+	    border-radius: 40px $im;
+	    min-width: 136px $im;
+	    height: 52px $im;
+	    background-color: $d-gray2 $im;
+     	background: none;
+     	color: transparent;
+     	transition: 0.4s;
+     	&:before{
+     		content: "next story";
+     		color: $white;
+     		@include font($p, 0.7rem, 600, 1);
+     		display: block;
+     		position: absolute;
+     		left: 14px;
+     		top: 20px;
+     	}
+     	&:after{
+     		content: "";
+     		position: absolute;
+     		display: block;
+     		right: -5px;
+     		top: 0;
+     		background: transparent url(img/prev-img.png) 10px 0px no-repeat;
+		    background-size: contain;
+		    width: 59px;
+		    border-radius: 40px;
+		    height: 52px;
+		    background-color: $white;
+     	}
+   		&:hover{
+   			background-color: $e-violet $im;
+   		}
+	}
+
+	.bx-wrapper .bx-prev{
+		left: -79px $im;
+	    border-radius: 40px $im;
+	    min-width: 158px $im;
+	    height: 52px $im;
+	    background-color: $d-gray2 $im;
+     	background: none;
+     	color: transparent;
+     	transition: 0.4s;
+     	&:before{
+     		content: "previous story";
+     		color: $white;
+     		@include font($p, 0.7rem, 600, 1);
+     		display: block;
+     		position: absolute;
+     		right: 14px;
+     		top: 20px;
+     	}
+     	&:after{
+     		content: "";
+     		position: absolute;
+     		display: block;
+     		left: -5px;
+     		top: 0;
+     		background: transparent url(img/prev-img.png) 10px 0px no-repeat;
+		    background-size: contain;
+		    width: 59px;
+		    border-radius: 40px;
+		    height: 52px;
+		    background-color: $white;
+     	}
+   		&:hover{
+   			background-color: $e-violet $im;
+   		}
+	}
+}

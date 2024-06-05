@@ -1,0 +1,296 @@
+.jx-Price{
+background-color: $White;
+padding-top: 100px;
+padding-bottom: 100px;
+@media (min-width:320px) and (max-width: 1200px){
+		padding-bottom: 0px;
+	}
+
+
+
+
+&__subtitle{
+	font: {
+     family: $Montserrat;
+     size: 18px;
+     weight: 700; 
+	}
+	text-transform: uppercase;
+	color: $liht-gray2;
+}
+
+&__title--bold{
+
+	font: {
+     family: $PT;
+     size: 30px;
+     weight: 700; 
+	}
+	color: $liht-gray2;
+}
+&__title{
+	padding-bottom: 84px;
+	font: {
+     family: $PT;
+     size: 30px;
+     weight: 400; 
+	}
+	color: $liht-gray2;
+}
+&__divider{
+	padding-top: 20px;
+	padding-bottom: 27px;
+}
+&__BP-f{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: -15px;
+	right: 44px;
+	@media (min-width:320px) and (max-width: 516px){
+		right: 58px;
+	}
+	@media (min-width:517px) and (max-width: 757px){
+		right: 108px;
+	}
+	background-color: $BP;
+	transform: skew(-35deg, 0deg )
+
+}
+&__BP{
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	padding: 10px 11px;
+	background-color: $light-blue;
+	@media (min-width:320px) and (max-width: 516px){
+		right: 0px;
+	}
+	@media (min-width:517px) and (max-width: 757px){
+		right: 50px;
+	}
+	font: {
+     family: $Roboto;
+     size: 11px;
+     weight: 400; 
+	}
+	color: $White;
+}
+
+&__item{
+	background-color: $light-white;
+	position: relative;
+
+	
+}
+&__item:hover{
+	box-shadow: 0px 5px 5px 0px $shadow;
+
+}
+&__item:hover .jx-Price__dollar, &__item:hover .jx-Price__doll{
+	color: $White;
+	transition: 0.5s;
+	
+}
+&__item:hover .jx-Price__icon:before{
+	background-color: $copper;
+	transition: 0.5s;
+	
+}
+
+&__item:hover .jx-Price__BPbutton{
+	background-color: $copper;
+	color: $White;
+}
+&__item:hover .jx-Price__BPcaret{
+	color: $White;
+}
+&__icon{
+	padding-bottom: 85px;
+	position: relative;
+
+	@media (min-width:320px) and (max-width: 516px){
+		padding-bottom: 60px;
+	}
+    @media (min-width:517px) and (max-width: 1200px){
+		padding-bottom: 60px;
+	}
+	&:before{
+		position: absolute;
+		top: -40px;
+		left: 50%;
+		margin-left: -40px;
+		content: "";
+		display: inline-block;
+		height: 80px;
+		width: 80px;
+		background-color: $White;
+		border: 1px solid $copper;
+		border-radius:  5px;
+		transform: rotate(45deg);
+	}
+}
+&__dollar{
+		
+		
+		font: {
+     family: $PT;
+     size: 15px;
+     weight: 700; 
+	}
+	color: $copper;
+	}
+	&__iconbox{
+		position: absolute;
+		top: -25px;
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+		
+	
+	&__doll{
+		padding-left: 1px;
+		font: {
+     family: $PT;
+     size: 30px;
+     weight: 700; 
+	}
+	color: $copper;
+	}
+	hr.jx-Price__border{
+		margin: 20px 0;
+		@media (min-width:320px) and (max-width: 516px){
+		margin: 10px 0;
+	}
+    }    
+     hr.jx-Price__border--mob{
+     	@media (min-width:320px) and (max-width: 516px){
+		margin-bottom: 0px;
+	}
+     }
+
+	&__name{
+	
+	font: {
+     family: $Montserrat;
+     size: 18px;
+     weight: 700; 
+	}
+	color: $liht-gray2;
+}
+&__desc{
+	line-height: 28px;
+	font: {
+     family: $Roboto;
+     size: 16px;
+     weight: 400; 
+	}
+	color: $gray2;
+}
+&__list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+&__list-item{
+line-height: 45px;
+position: relative;
+@media (min-width:320px) and (max-width: 516px){
+		line-height: 40px;
+	}
+}
+
+&__list-item--line:before{
+content: "";
+display: block;
+position: absolute;
+background-color: $copper;
+height: 1px;
+width: 158px;
+margin-left: 50%;
+transform: translate(-50%, 0);
+bottom: 22px;
+@media (min-width:320px) and (max-width: 516px){
+		width: 212px;
+        bottom: 20px;
+	}
+	
+}
+
+
+  &__BPbutton{
+  	border: 2px solid $copper;
+   background-color: $light-white;
+   
+   font: {
+     family: $Montserrat;
+     size: 13px;
+     weight: 700; 
+	}
+	text-transform: uppercase;
+	color: $copper;
+	padding: 20px 24px;
+	margin-bottom: 25px;
+	@media (min-width:320px) and (max-width: 516px){
+		margin-bottom: 10px;
+	}
+  }
+
+&__BPcaret{
+  	margin-left: 20px;
+  	color: $copper;
+  }
+  
+
+&__servdown{
+	padding-bottom: 67px;
+}
+
+ &__button{
+ 	letter-spacing: 1px;
+   background-color: $copper;
+   border: 0px solid #000;
+   font: {
+     family: $Montserrat;
+     size: 13px;
+     weight: 700; 
+	}
+	text-transform: uppercase;
+	color: $White;
+	padding: 20px 35px;
+  }
+
+  &__caret{
+  	margin-left: 20px;
+  }
+
+&__button:hover{
+ color: $dark-gray;
+}
+&__button:focus{
+	box-shadow: none;
+}
+
+&__NQ{
+
+	padding-bottom: 30px;
+	font: {
+     family: $Roboto;
+     size: 16px;
+     weight: 700; 
+	}
+	color: $gray2;
+}
+
+&__mobile{
+@media (min-width:320px) and (max-width: 516px){
+		padding-top: 90px;
+	}
+	@media (min-width:517px) and (max-width: 1200px){
+		padding-bottom: 90px;
+	}
+}
+
+}

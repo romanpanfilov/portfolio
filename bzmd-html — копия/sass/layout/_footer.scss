@@ -1,0 +1,52 @@
+.bz-footer{
+	padding-top: 40px;
+	&__logo{
+		margin-bottom: 47px;
+		display: block;
+	}
+	&__link{
+		@include font($font__main, 1.8, 500, $color__link);
+		line-height: 22px;
+		margin-bottom: 19px;
+		display: block;
+		&:hover, &:focus{
+			color: $color__background-green;
+		}
+	}
+	&__title{
+ 		@include font($font__main, 1.8, 600, $color__link);
+ 		line-height: 22px;
+ 		margin-bottom: 21px;
+ 		display: block;
+	}
+	&__social{
+		text-transform: uppercase;
+ 		@include font($font__main, 1.4, 500, $color__link);
+ 		line-height: 17px;
+ 		margin-bottom: 19px;
+ 		display: block;
+ 		&:hover, &:focus{
+ 			color: $color__background-green;
+ 		}
+	}
+	&__sub{
+		padding-top: 23px;
+		padding-bottom: 24px;
+	}
+	&__line{
+		padding-bottom: 47px;
+		border-bottom: 2px solid $color__background-black;
+	}
+	&__copy{
+ 		@include font($font__main, 1.4, 500, $color__text-dgray);
+	}
+	&__by{
+ 		@include font($font__main, 1.4, 500, $color__text-dgray);
+ 		a{
+ 			color: $color__link;
+ 			&:hover{
+ 				color: $color__background-green;
+ 			}
+ 		}
+	}
+}

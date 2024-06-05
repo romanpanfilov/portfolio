@@ -1,0 +1,164 @@
+.bz-article{
+	padding-top: 50px;
+	background-color: $color__background-white;
+	&__intro{
+		margin-bottom: 80px;
+	&-image{
+		min-height: 665px;
+    	background-size: cover;
+    	padding: 25px 30px 28px 30px;
+    	background-repeat: no-repeat;
+    }
+    	&-categories{
+    		display: block;
+			@include font($font__main, 1.3, 600, $color__link-d);
+			line-height: 16px;
+			margin-bottom: 14px;
+    	}
+    	&-title{
+    		display: block;
+			@include font($font__main, 2.4, 600, $color__link-d);
+			line-height: 29px;
+			margin-bottom: 6px;
+			&:hover, &:focus{
+				color: $color__background-green $im;
+			}
+			&:visited{
+				color: $color__link-d;
+			}
+    	}
+    	&-desc{
+    		display: block;
+			@include font($font__main, 1.6, 400, $color__text-ssl);
+			line-height: 19px;
+			margin-bottom: 27px;
+    	}
+    	&-date{
+    		display: block;
+			@include font($font__main, 1.4, 400, $color__link-d);
+			line-height: 17px;
+    	}	
+	}    	
+		&__summary-text{
+    		@include font($font__main, 1.6, 400, $color__link);
+			line-height: 25px;
+			margin-bottom: 80px;
+    	}
+    		&__author-image{
+    			margin-bottom: 50px;
+    	}
+    		&__author{
+    			position: relative;
+    			padding-bottom: 41px;
+    				&:before{
+    					content: "";
+    					position: absolute;
+    					display: block;
+    					height: 5px;
+    					max-width: 72px;
+						width: 100%;
+						background-color: $color__btn-border;
+						bottom: 0;
+						left: 0;
+    				}
+    			&-name{
+    				@include font($font__main, 2.4, 600, $color__link);
+					line-height: 26px;
+					margin-bottom: 5px;
+    			}
+    			&-info{
+    				@include font($font__main, 1.6, 400, $color__link);
+					line-height: 26px;
+    			}
+    		}
+    		&__quote{
+    			@include font($font__secondary, 2.8, 300, $color__link);
+				line-height: 34px;
+				margin-top: 14px;
+				max-width: 292px;
+				width: 100%;
+    		}
+    	&__paragraph{
+    		@include font($font__main, 1.6, 400, $color__link);
+			line-height: 25px;
+			&-quote{
+				position: relative;
+				@include font($font__secondary, 2.8, 300, $color__link);
+				line-height: 34px;
+				padding-left: 25px;
+				margin-bottom: 40px;
+				margin-top: 16px;
+				&:before{
+					content: "";
+					position: absolute;
+					display: block;
+					width: 5px;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background-color: $color__btn-border;
+				}
+			}
+    	}
+    	&__also-title{
+    		@include font($font__main, 2.4, 600, $color__link);
+			line-height: 30px;
+    	}
+    	&__post{
+    		margin-right: 24px;
+    		position: relative;
+		    flex: 0 0 33%;
+		    max-width: 33%;
+    		&-box{
+    			margin-bottom: 38px;
+    		}
+    		&-category{
+    			margin-top: 5px;
+    			@include font($font__main, 1.2, 600, $color__link);
+				line-height: 14px;
+				display: block;
+				margin-bottom: 13px;
+				text-transform: uppercase;
+    		}
+    		&-title{
+    			@include font($font__main, 1.8, 500, $color__link);
+				line-height: 22px;
+				display: block;
+				margin-bottom: 10px;
+    		}
+    		&-text{
+    			@include font($font__main, 1.4, 400, $color__text-l);
+				line-height: 17px;
+			    margin-bottom: 9px;
+			    height: 35px;
+			    overflow: hidden;
+    		}
+    		&-name{
+    			@include font($font__main, 1.4, 400, $color__link);
+				line-height: 17px;
+				margin-right: 5px;
+    		}
+    		&-date{
+    			@include font($font__main, 1.4, 400, $color__text-l);
+				line-height: 17px;
+    		}
+    	}
+		&__big{
+			&-badge{
+				position: absolute;
+				display: block;
+				max-width: 60px;
+				width: 100%;
+				left: 0;
+				bottom: 15px;
+				padding:3px 6px 0 6px;
+				@include font($font__main, 1.2, 600, $color__link-d);
+				text-align: center;
+				line-height: 22px;
+				text-transform: uppercase;
+			&--promo{
+				background-color: $color__background-badge;
+			}
+		}
+		}
+}

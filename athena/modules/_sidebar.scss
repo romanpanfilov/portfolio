@@ -1,0 +1,50 @@
+.at-sidebar{
+	background-color: $white;
+	&__title{
+		padding-top: 65px;
+		color:  $black;
+	    @include font($os, 1.6rem $im, 600);
+	    margin-bottom: 25px;
+	}
+	&__list-box{
+		list-style-type: none;
+		padding-left: 0;
+	}
+	
+	&__link{
+		display: block;
+		line-height: 40px $im;
+		color:  $m-gray;
+	    @include font($os, 1.4rem $im, 600);		
+	}
+	&__box{
+		width: 100%;
+	}
+
+	&__img{
+		max-width: 100px;
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		&-box{
+			
+			display: inline-block;
+			text-align: center;
+			max-width: 177px;
+			width: 100%;
+			&:hover .at-sidebar__img{
+				  box-shadow: 0px 5px 40.18px 8.82px rgba(130, 112, 161, 0.19);
+			}
+			&:hover .at-sidebar__img-title{
+				color: $l-blue1;
+			}
+		}
+	}
+	&__img-title{
+		margin-top: 17px;
+		line-height: 1;
+		color:  $m-gray;
+	    @include font($os, 1.4rem $im, 700);
+	}
+	
+}
